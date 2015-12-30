@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<script>
+
+// 当微信内置浏览器完成内部初始化后会触发WeixinJSBridgeReady事件。
+document.addEventListener('WeixinJSBridgeReady', function() {
+   
+}, false);
+
+
+document.addEventListener('WeixinJSBridgeReady', function() {
+    // 通过下面这个API隐藏右上角分享的相关按钮
+    //WeixinJSBridge.call('hideOptionMenu');
+});
+            
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+    // 通过下面这个API显示右上角分享的相关按钮
+    //WeixinJSBridge.call('showOptionMenu');
+});
+
+document.addEventListener('WeixinJSBridgeReady', function() {
+   
+	WeixinJSBridge.invoke('getNetworkType',{},function(e){
+		// 在这里拿到e.err_msg，这里面就包含了所有的网络类型
+		alert(e.err_msg);
+	});
+
+}, false);
+
+
+</script>
+</body>
+</html>
