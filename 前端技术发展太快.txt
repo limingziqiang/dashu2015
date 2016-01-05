@@ -1,0 +1,36 @@
+
+Node-->Express-->KoaJS-->thinkJS
+
+Grunt-->Gulp-->Bower-->jspm-->webpack
+
+npm
+
+Angular  ng拉起前端mv*框架潮流
+
+https://babeljs.io/  Babel能够实现ES6 到 ES5的代码转换
+
+移动原生应用 phonegap、React Native
+
+jQuery 
+Vue 
+React
+
+gulp前端自动化工程，带起了sass、avalon（mvvm框架）
+
+从浮躁中走出来... 何去何从？
+
+《javascript设计模式与开发实践》
+
+测试：phantomJS-->casperJS
+
+
+
+
+
+
+
+
+
+
+
+
