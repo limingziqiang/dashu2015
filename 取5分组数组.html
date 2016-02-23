@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+</head>
+
+<body>
+
+
+
+<script>
+
+var arrData = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
+var oDate = new Date(),
+	iKey = oDate.getMonth()+''+oDate.getDate();
+
+function getData(arr){
+	var i = 0,
+		iGetNum = 5,
+		aResult = [],
+		len = arr.length,
+		iLenSplitData = Math.ceil(len/iGetNum),
+		aSplitData = [];
+	
+	var sLast = [];
+	
+	while(len--){
+		
+		if(i<5){
+			aResult.push(arr[len]);	
+		} 
+		i++;
+		
+		if(aResult.length == iGetNum){
+			aSplitData.push(aResult.toString());
+			aResult.length = 0;		
+			i = 0;
+		}
+		if(len < iGetNum){
+			sLast.push(arr[len]);	
+		}	
+	}
+	
+	aSplitData.push(sLast.toString());
+	
+	return aSplitData;
+}
+
+
+
+
+var aArray = getData(arrData);
+
+console.log(aArray);
+
+console.log(iKey%aArray.length);
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
