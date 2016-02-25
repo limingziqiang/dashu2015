@@ -33,7 +33,7 @@ function getData(arr){
 		i++;
 		
 		if(aResult.length == iGetNum){
-			aSplitData.push(aResult.toString());
+			aSplitData.push(aResult.concat());
 			aResult.length = 0;		
 			i = 0;
 		}
@@ -42,7 +42,7 @@ function getData(arr){
 		}	
 	}
 	
-	aSplitData.push(sLast.toString());
+	aSplitData.push(sLast.concat());
 	
 	return aSplitData;
 }
