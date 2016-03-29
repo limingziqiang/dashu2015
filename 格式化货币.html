@@ -1,0 +1,59 @@
+<div class="gz_three js_inumplus">22040204</div>
+	<div class="gz_four  js_inumplus">22040204</div>
+
+var fnPirceformat = function(){
+		var olist = doc.getElementsByClassName('js_inumplus');			
+		var i = 0;
+		var num = 0;
+		var arr = [];
+		var str = '';
+		for( ; i < olist.length; i++)
+		{
+			num = olist[i].innerHTML;		
+			arr = num.split('');
+			
+			var arrlen = arr.length;
+			var aResult = [];
+			var count = 0;
+			while(arrlen--){
+				count++;
+				aResult.unshift("<i>"+arr[arrlen]+"</i>");	
+				if(count==3)
+				{
+					count = 0;
+					if(arrlen > 0)
+					{	
+						aResult.unshift('<span class="js_dot"></span>');
+					}	
+				}
+			}
+			olist[i].innerHTML = aResult.join('');
+			aResult.length = 0;
+			str = '';
+			count = 0;
+		}
+	};
+	
+	
+	
+	<script type="text/javascript">
+		var str="";
+		var arr=[1,2,3];
+		var m = Math.floor(arr.length/3);
+		for (var j = 0; j < m; j++) {
+			if(arr.length>=2){
+				for (var i = 0; i < 3; i++) {
+					str = arr.pop()+str;
+				};
+			}
+				str=","+str;
+		};
+		if(arr.length==0){
+			str = str.substring(1,str.length);
+		}else{
+			for (var i = 0; i < arr.length; i++) {
+				str = arr.pop()+str;
+			};
+		}
+		alert(str);
+	</script>
