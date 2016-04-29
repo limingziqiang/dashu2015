@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>hotcss.js</title>
+</head>
+
+<body>
+
+
+<textarea name="" id="" cols="30" rows="10">
+
+.box{ width:100px;}
+
+.left{ padding-left:20px;}
+
+
+</textarea>
+
+
+<textarea name="" id="" cols="30" rows="10">
+
+
+</textarea>
+
+<script>
+
+
+(function(doc,win){
+	var aTxt = doc.querySelectorAll('textarea'),
+		
+		oTxt = aTxt[0],
+		oTxtResult = aTxt[1],
+		re = /:\s?(\d+)px/g;
+	
+	oTxtResult.value = '';
+	oTxt.addEventListener('input',function(){
+		
+		var sTxt = oTxt.value;
+		//alert(oTxt.value);
+			
+		//console.log(sTxt.match(re));		
+		
+		var sResult = sTxt.replace(re,function(self, rematch){
+			
+			return ':px2rem('+rematch+')';
+		
+		});
+		
+		
+		oTxtResult.value = sResult;
+		
+		
+	},true);
+})(document,window);
+
+
+
+</script>
+
+
+
+</body>
+</html>
