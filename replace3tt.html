@@ -33,8 +33,6 @@ var re = /[\u4E00-\u9FFF]/g;
 
 
 var oFormat = {
-
-	
 	"insertAfter" : function (newEl, targetEl) { 
 		var parentEl = targetEl.parentNode; 
 		if(parentEl.lastChild == targetEl) { 
@@ -56,7 +54,7 @@ var oFormat = {
                 default:
                 return '';
             }
-     }(document.createElement('dashu').style),
+        }(document.createElement('dashu').style),
 	"imgLen":function(){
 		return this.obj.getElementsByTagName('img').length;
 	},
@@ -203,11 +201,9 @@ oFormatAct.prototype = oFormat;
 
 
 var a = new oFormatAct('#box2');
-	
 console.log(a.init());
 
 /*var b = new oFormatAct('#box2');
-	
 console.log(b.init());*/
 </script>
 </body>
