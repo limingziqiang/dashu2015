@@ -26,7 +26,7 @@ var Smarge = {
 		var data;
 		if(localStorage[this.db]){
 			data = JSON.parse(localStorage[this.db]);
-		}else{
+		}else{ 
 			data = {};
 		}
 		var d = new Date();
