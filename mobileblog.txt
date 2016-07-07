@@ -1,0 +1,315 @@
+移动端资料/框架/文章 整合
+移动端资料/框架/文章 整合
+
+资料
+
+资料合集jtyjty99999 / mobileTech [比较好] 
+https://github.com/jtyjty99999/mobileTech 
+备用:https://github.com/yyman001/mobileTech
+
+移动Web解决方案(支付宝): http://am-team.github.io/amg/dev-exp-doc.html
+
+前端组件库[比较多资料,分类也多] 
+https://github.com/JingwenTian/awesome-frontend
+
+【原】移动web资源整理 - 白树 - 博客园 
+http://www.cnblogs.com/PeunZhang/p/3407453.html#top
+
+移动web开发规范[还有其他资料] 
+https://github.com/alanerzhao/doc/blob/master/document/mobile_web_specification%20.md
+
+Web App 建议用的样式 [比较详细] 
+http://blog.csdn.net/zhangxin09/article/details/8750586
+
+移动端常见问题整理 
+https://github.com/suning-wireless/Mobile-Web-Tech/issues/1
+
+webapp开发实践【资料集】不错不错 
+http://mweb.baidu.com/p/webapp%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5.html
+
+腾讯移动Web前端知识库[比较好] 
+https://github.com/AlloyTeam/Mars
+
+web前端开发分享-css,js移动篇[很多资料] 
+http://www.cnblogs.com/jikey/p/3632392.html
+Web App 响应式页面制作 笔记整理 
+http://www.ituring.com.cn/article/69192
+
+WEBAPP开发技巧(手机网站开发注意事项) 
+http://www.css119.com/archives/1042
+
+webkit开发，app移动前端知识点 
+http://caibaojian.com/644.html
+
+腾讯移动web开发规范 
+http://www.zjgsq.com/1339.html
+
+移动平台WEB前端开发技巧汇总 
+http://uecss.com/mobile-platform-web-front-end-development-skills-summary.html
+
+框架
+
+高性能框架
+
+移动开发集成方案[WEBAPP模块化开发框架] 
+https://github.com/scrat-team/scrat
+
+MT是手机腾讯网前端团队开发维护的一个专注于移动端的js模块管理框架。 
+http://mt.tencent.com/mt1index.html#overview 
+os:http://git.oschina.net/luyongfugx/mt
+
+仿ios，android ui app框架【屌】 
+http://moobilejs.com/
+
+Framework7[不错] 
+http://framework7.taobao.org/
+
+Reapp[不太好] 
+http://reapp.io/
+
+Clouda+ [百度web移动轻应用] 
+http://clouda.baidu.com/ 
+api: http://clouda.baidu.com/blend/introduction/introduction
+
+G.js 
+http://www.yxsss.com/g/
+
+appcan 
+http://www.appcan.cn/
+
+App.js【mvc类型】 
+http://code.kik.com/app/2/index.html
+
+移动端DOM框架 
+kissy mini.js 【淘宝】 
+http://m.kissyui.com/api/core.html
+
+canJS 【mvc类型】之类的dom? 
+http://canjs.com/
+
+路由 
+http://projects.jga.me/routie/
+
+web_app 混合 dom? 
+https://famo.us/docs/0.1.1/core/Context/
+
+UI框架
+
+为什么移动Web应用程序很慢（译） 
+动画效果集 
+http://frozenui.github.io/case.html#css3
+
+百度移动【可以考虑】 
+http://cloudajs.org/ 
+http://cloudajs.org/ui 【组件】 
+http://clouda.com/ [已经更旧版的新官网]
+
+Lungo.jS【更屌】 
+【Lungo.jS是一个使用HTML5、CSS3和 JavaScript技术的移动Web开发框架。所创建应用可运行于所有流行平台之上（iOS、Android、Blackberry和WebOS）。它支持触控事件，如单击、 
+双击和滑动。无需使用图片，全部采用向量声称。】 
+http://lungo.tapquo.com/
+
+Junior zp+backone组合框架 mvc 
+http://justspamjustin.github.io/junior/#pushstate
+
+foundation 
+http://foundation.zurb.com/
+
+Get Kendo UI 【mvc？】 
+http://docs.kendoui.com/api/mobile/application
+
+JS功能插件
+
+左侧栏插件Slideout.js 
+https://mango.github.io/slideout/
+
+前端HTML5本地压缩图片，兼容移动设备 
+https://github.com/rogueduola/LocalResizeIMG
+
+使用debug.js调试手机网页 
+http://segmentfault.com/blog/laopopo/1190000000731903
+
+使用time.js格式化时间戳 
+https://github.com/binnng/time.js
+
+PhotoSwipe 4.0 
+http://photoswipe.com/
+
+使用 FocusPoint.js 实现图片的响应式裁剪 
+https://github.com/jonom/jquery-focuspoint 
+http://bbs.html5cn.org/thread-84166-1-1.html 文章介绍
+
+TouchScroll 
+https://github.com/davidaurelio/TouchScroll
+
+侧导航框架nav 
+http://sidetap.it/
+
+jQuery.mmenu – 用于移动 Web 项目的光滑菜单menu 
+http://mmenu.frebsite.nl/
+
+移动 Web 开发必备！时尚的 Off Canvas 导航 
+http://www.cnblogs.com/lhb25/p/off-canvas-menu-effects.html
+
+xScroll framework 0.1.0 [国产] 
+https://github.com/ouxingzhi/xscroll
+
+【官网】 http://iscrolljs.com/ 
+iScroll4 【模拟滚动】 
+http://cubiq.org/iscroll-4 
+https://github.com/cubiq/iscroll
+
+iScroll 4.2.5 中文API
+http://www.gafish.net/api/iScroll.html#snap
+http://www.yingxiangzhi.com/blog/?p=1434
+
+部分问题解决方法
+http://www.mansonchor.com/blog/blog_detail_64.html
+
+iscroll4升级到iscroll5全攻略笔记（待续） 
+http://blog.csdn.net/gcz564539969/article/details/9156141
+
+web app开发利器 - iscroll4 解决方案【比较全】 
+http://www.cnblogs.com/aaronjs/p/3147470.html
+
+运用webkit绘制渲染页面原理解决iscroll4闪动的问题 
+http://www.iunbug.com/archives/2012/09/19/411.html
+
+使用 iosOverlay.js 创建 iOS 风格的提示和通知[不错]配合上面的框架 
+http://taitems.github.io/iOS-Overlay/
+
+手机日历插件 
+http://demo.mobiscroll.com/
+
+分页 
+http://www.html5tricks.com/demo/jquery-pagnation-mobile-pc/index.html
+
+文章
+
+移动终端开发必备知识 
+http://isux.tencent.com/mobile-development-essential-knowledge.html
+
+http://www.exiatian.com/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E6%95%B4%E7%90%86/
+
+http://www.exiatian.com/%E6%8E%A8%E8%8D%9018%E4%B8%AA%E9%9D%9E%E5%B8%B8%E6%A3%92%E7%9A%84web%E5%92%8C%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/
+
+手机项目的一点总结 
+http://henryzp.com/?p=901
+
+移动平台WEB前端开发技巧汇总（转） 
+http://www.w3cfuns.com/blog-5439572-5397736.html
+
+【HTML/CSS】总结web app项目实践经验 
+http://blog.csdn.net/xiongjunlbs/article/details/23961859
+
+移动应用中全屏模式要点研究 
+http://mobile.51cto.com/hot-422964.htm
+
+移动端H5页面之iphone6的适配[不错] 
+http://www.ghugo.com/mobile-h5-fluid-layout-for-iphone6/#comment-198933
+
+全是干货！移动HTML 5前端性能优化指南 
+http://www.uisdc.com/html5-front-end-optimization
+
+响应式与移动端(四)：会变脸的媒体查询 
+http://www.codingserf.com/index.php/2015/03/responsive-and-mobile-4
+
+论material design网格规范设计和前端手机rem尺寸如何配合 
+http://www.dmtuan.com/?p=655
+
+如何优化移动网站，快速响应如本地应用 
+http://www.w3cfuns.com/article-1246-1.html
+
+移动开发会用得到的JavaScript框架 
+http://www.w3cfuns.com/blog-5430910-5396840.html
+
+如何优化运行在webkit上的web app 
+http://www.cnblogs.com/willian/p/3240277.html
+
+HTML5 Web通知-IOS 
+http://cubiq.org/add-to-home-screen 
+http://dangercove.github.io/html5-notifications/ 
+https://github.com/kamladi/ToDo-localStorage/tree/master/add-to-homescreen
+
+基于CSS3的WEBAPP横向滑动模式演化 
+http://www.elonglau.com/171.html
+
+为什么移动Web应用程序很慢（译） 
+http://www.cnblogs.com/rubylouvre/p/3213632.html
+
+十大免费移动程序测试框架(Android/iOS) 
+http://www.evget.com/article/2013/12/3/20143.html
+
+Responsive Javascript 是什么？ 
+http://www.admin10000.com/document/3932.html
+
+10个用于移动应用程序开发的JavaScript框架 
+http://www.w3cfuns.com/article-1162-1.html
+
+如何优化移动网站，快速响应如本地应用 
+http://www.w3cfuns.com/article-1246-1.html
+
+CSS开启硬件加速来提高网站性能 
+http://rainweb.cn/article/css-hardspeed.html
+
+构建 iOS 风格移动 Web 应用程序的8款开发框架 
+http://www.cnblogs.com/lhb25/p/frameworks-ios-style-web-applications.html
+
+前端开发框架对比 
+http://www.ibm.com/developerworks/cn/web/1404_wangfx_jsframeworks/
+
+经验分享：移动应用交互动效设计 
+http://www.uisdc.com/app-animation-design
+
+涨姿势时间！你应该了解的“移动端兼容性” 
+http://www.uisdc.com/mobile-compatibility-analysis
+
+判断用户是否是用PC端和WAP端 
+http://www.boloog.com/detection/91.html
+
+移动版专题设计的那些事 
+http://tgideas.qq.com/webplat/info/news_version3/804/808/810/m579/201403/248735.shtml
+
+谈响应式web设计代码实现 
+http://isux.tencent.com/code-of-response-web-design.html
+
+关于调试
+
+整理：手机端网页调试方案 
+http://blog.segmentfault.com/humphry/1190000000313211
+
+如何在电脑上测试手机网站 
+http://yanhaijing.com/web/2014/02/21/how-to-test-mobile-websit-on-pc/
+
+工具
+
+手机尺寸 
+http://chicun.in/index.html
+
+8款流行的移动开发必备工具 
+http://www.evget.com/article/2013/11/29/20127.html
+
+移动多界面设备测试 
+http://www.responsinator.com/
+
+App设计师常用的10大网页和工具大盘点 
+http://blog.segmentfault.com/coly/1190000000371226
+
+针对开发者的20款移动开发框架 
+http://www.csdn.net/article/2013-07-09/2816161
+
+分享10个最佳JQuery的触摸功能的滑块插件 
+http://www.cnblogs.com/58top/archive/2012/11/30/touch-enabled-sliders.html
+
+10个最佳的触控手式的JavaScript框架 
+http://www.woiweb.net/10-best-mobile-touch-javascript-framework.html
+
+悬浮九宫格菜单jQuery插件 适用于移动端网站 
+http://js.itivy.com/jiaoben2162/index.html
+
+10个用于移动应用程序开发的JavaScript框架 
+http://www.w3cfuns.com/article-1162-1.html
+
+60+支持触摸手势的jQuery插件(三) 
+http://www.html580.com/7148
+
