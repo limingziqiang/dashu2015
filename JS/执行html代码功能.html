@@ -1,0 +1,14 @@
+完美支持IE和Firefox,以下代码插入到页面body中：
+<textarea name="txtAdCode" rows="8" cols="40">
+这里填入要执行的完整html代码
+</textarea><br>
+<input type="button" onclick="runCode(this.offsetParent.getElementsByTagName('textarea')[0])" value="运行代码" /> <script>
+function runCode(obj)  //定义一个运行代码的函数，
+{
+  var code=obj.value;//即要运行的代码。
+  var newwin=window.open('','','');  //打开一个窗口并赋给变量newwin。
+  newwin.opener = null // 防止代码对论谈页面修改
+  newwin.document.write(code);  //向这个打开的窗口中写入代码code，这样就实现了运行代码功能。
+  newwin.document.close();
+}</script>
+效果见：http://www.fwl.name/article.aspx?id=69&cateid=4
