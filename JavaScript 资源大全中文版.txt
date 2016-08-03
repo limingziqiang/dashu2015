@@ -1,560 +1,872 @@
-JavaScript 资源大全中文版
-2016-03-16 18:23:38
-
-
-包管理器
-管理着 javascript 库，并提供读取和打包它们的工具。
-
-npm：npm 是 javascript 的包管理器。官网
-
-Bower：一个 web 应用的包管理器。官网
-
-component：能构建更好 web 应用的客户端包管理器。官网
-
-spm：全新的静态包管理器。官网
-
-jam：一个专注于浏览器端和兼容 RequireJS 的包管理器。官网
-
-jspm：流畅的浏览器包管理器。官网
-
-Ender：没有库文件的程序库。官网
-
-volo：以项目模板、添加依赖项与自动化生成的方式创建前端项目。官网
-
-Duo：一个整合 Component、Browserify 和 Go 官网的最佳思想，使开发者能快速方便地组织和编写前端代码的下一代包管理器。
-
-加载器
-JavaScript 的模块或加载系统。
-
-RequireJS：JavaScript 文件和模块的加载器。官网
-
-browserify：在浏览器端以 node.js 的方式 require()。官网
-
-SeaJS：用于 Web 的模块加载器。官网
-
-HeadJS：HEAD 的唯一脚本。官网
-
-curl：小巧、快速且易扩展的模块加载器，它能处理 AMD、CommonJS Modules/1.1、CSS、HTML/text 和历史脚本。官网
-
-lazyload：小巧且无依赖的异步 JavaScript 和 CSS 加载器。官网
-
-script.js：异步 JavaScript 加载器和依赖管理器。官网
-
-systemjs：AMD、CJS（commonJS） 和符合 ES6 规范的模块加载器。官网
-
-LodJS：基于 AMD 的模块加载器。官网
-
-ESL：浏览器端的模块加载器，支持延迟定义和 AMD。官网
-
-modulejs：轻量的 JavaScript 模块系统。官网
-
-打包工具
-browserify ：Browserify 让你能在浏览器端使用 require(‘modules’) ，打包所有依赖。官网
-
-webpack：为浏览器打包 CommonJs/AMD 模块。官网
-
-测试框架
-框架
-mocha：适用于 node.js 和浏览器、简易、灵活、有趣的 JavaScript 测试框架。官网
-
-jasmine：简单无 DOM 的 JavaScript 测试框架。官网
-
-qunit：一个易于使用的 JavaScript 单元测试框架。官网
-
-jest：简单的 JavaScript 单元测试框架。官网
-
-prova：基于 Tape 和 Browserify 的测试运行器，它适用于 Node & 浏览器。官网
-
-DalekJS：自动化且跨浏览器的 JavaScript 功能测试框架。官网
-
-断言
-chai：适用于 node.js 和浏览器的 BDD / TDD 断言框架，并能搭配其它测试框架使用。官网
-
-Sinon.JS：对 JavaScript 进行 spies、stubs 和 mock 测试。官网
-
-expect.js：简约的、适用于 Node.js 和浏览器端的 BDD 式断言工具。官网
-
-should.js：适用于 Node.js 的 BDD 式断言工具。官网
-
-覆盖率
-istanbul：另一个 JS 代码覆盖率检测工具。官网
-
-blanket：一个简单的代码覆盖率检测库。它的设计理念是易于安装和使用，且可用于浏览器端和 node.js。官网
-
-JSCover：JSCover 是一个检测 JavaScript 程序代码覆盖率的工具。官网
-
-运行器
-phantomjs：脚本化的 Headless WebKit。官网
-
-slimerjs：一个内核为 Gecko 的类似 PhantomJS 工具。官网
-
-casperjs：基于 PhantomJS 和 Slimer JS 的导航脚本和测试工具。官网
-
-zombie：基于 node.js 、快速、全栈且无图形界面的浏览器的测试工具。官网
-
-totoro：一个简单可靠且能跨浏览器运行的测试工具。官网
-
-karma：一个优秀的的 JavaScript 测试运行器。官网
-
-nightwatch：基于 node.js 和 selenium webdriver 的图形界面自动化测试框架。官网
-
-intern：下一代 JavaScript 代码测试栈。官网
-
-yolpo：在浏览器逐句执行的 JavaScript 解释器。官网
-
-QA 工具
-JSHint：JSHint 是一个有助于发现 JavaScript 代码错误和潜在问题的工具。官网
-
-jscs：JavaScript 代码风格检测工具。官网
-
-jsfmt：格式化、搜索和改写 JavaScript。官网
-
-jsinspect：检测复制粘贴和结构类似的代码。官网
-
-buddy.js：发现 JavaScript 代码里的 魔术数字。官网
-
-ESLint：完全插件化的工具，能在 JavaScript 中识别和记录模式。官网
-
-JSLint ：高标准、严格和固执的代码质量工具，旨在只保持语言的优良部分。官网
-
-MVC 框架和库
-angular.js：为网络应用增强 HTML。官网
-
-aurelia：一个适用于移动设备、桌面电脑和 web 的客户端 JavaScript 框架。官网
-
-backbone：给你的 JS 应用加入带有 Models、Views、Collections 和 Events 的 Backbone。官网
-
-batman.js：最适合 Rails 开发者的 JavaScript 框架。官网
-
-ember.js：一个旨在创建非凡 web 应用的 JavaScript 框架。官网
-
-meteor：一个超简单的、数据库无处不在的、只传输数据的纯 JavaScript web 框架。官网
-
-ractive：新一代 DOM 操作。官网
-
-vue：一个用于构建可交互界面的、直观快速和可组合的 MVVM 框架。官网
-
-knockout：Knockout 用 JavaScript 让创建响应式的富 UI 更加容易。官网
-
-spine：构建 JavaScript 应用的轻量 MVC 库。官网
-
-espresso.js：一个极小的、用于制作用户界面的 JavaScript 库。官网
-
-canjs：让 JS 更好、更快、更简单。官网
-
-react：用于建构用户界面的库。它是声明式的、高效的和极度灵活的，并使用虚拟 DOM 作为其不同的实现。官网
-
-react-native：一个用 React 构建原生应用的框架。官网
-
-riot：类 React 库，但很轻量。官网
-
-thorax：加强你的 Backbone。官网
-
-chaplin：使用 Backbone.js 库的 JavaScript 应用架构。官网
-
-marionette：一个 Backbone.js 的复合应用程序库，旨在简化大型 JavaScript 应用结构。官网
-
-ripple：一个小巧的、用于构建响应界面的基础框架。官网
-
-rivets：轻量却拥有强大的数据绑定和模板解决方案官网
-
-derby：让编写实时和协同应用更简单的 MVC 框架，能够在 Node.js 和浏览器同时运行。官网
-
-derby-awesome：很棒的 derby 组件集合。官网
-
-way.js：简单、轻量、持久化的双向数据绑定。官网
-
-mithril.js：Mithril 是一个客户端 MVC 框架（轻量、强大和快速）官网
-
-jsblocks：jsblocks 是一个更好的 MV-ish 框架。官网
-
-LiquidLava：易懂的、用于构建用户界面的 MVC 框架。官网
-
-基于 Node 的 CMS 框架
-KeystoneJS：强大的 CMS 和 web 应用框架。官网
-
-Reaction Commerce：拥有实时的架构和设计的响应式（reactive） CMS。官网
-
-Ghost：简单、强大的发布平台。官网
-
-Apostrophe：提供内容编辑和基本服务的 CMS。官网
-
-We.js：适用于实时应用、网站或博客的框架。官网
-
-Hatch.js：拥有社交特性的 CMS 平台。官网
-
-TaracotJS：拥有快速、极简风格特点且基于Node.js 的 CMS。官网
-
-Nodizecms：为 CoffeeScript 爱好者准备的 CMS。官网
-
-Cody：拥有所见即所得的编辑器的 CMS。官网
-
-PencilBlue：CMS 和博客平台。官网
-
-模板引擎
-模板引擎允许您执行字符串插值。
-
-mustache.js：是 JavaScript 中带有 {{mustaches}} 的最简模板。官网
-
-handlebars.js：是 Mustache 模板语言的扩展。官网
-
-hogan.js：是 Mustache 模板语言的编译器。官网
-
-doT：最快速简洁的 JavaScript 模板引擎，适用于 nodejs 和浏览器。官网
-
-dustjs：适用于浏览器和 node.js 的异步模板。官网
-
-eco：嵌入式的 CoffeeScript 模板。官网
-
-JavaScript-Templates：轻量（小于 1KB）、快速且无依赖的强大 JavaScript 模版引擎。官网
-
-t.js：小巧的 JavaScript 模板框架，压缩后约为 400 字节。官网
-
-Jade：健壮的、优雅且功能丰富的 nodejs 模板引擎。官网
-
-EJS：高效的 JavaScript 模板。官网
-
-xtemplate：可扩展的模板引擎，适用于 node 和浏览器。官网
-
-marko：快速轻量且基于 HTML 的模板引擎，支持异步、流、自定义标签和 CommonJS 模编译后输出。适用于 Node.js 官网和浏览器。
-
-数据可视化
-Web 数据可视化工具
-
-d3：一个对 HTML 和 SVG 进行可视化的 JavaScript 库。官网
-
-metrics-graphics：更简洁和拥有更规范的数据图表布局优化算法的库。官网
-
-pykcharts.js：经过精心设计后，去除 d3.js 复杂性的 d3.js 图表库。官网
-
-three.js：JavaScript 3D 库。官网
-
-Chart.js：简单的、基于 canvas 标签的 HTML5 图表库。官网
-
-paper.js：是矢量图形脚本中的瑞士军刀 —— 使用 HTML5 Canvas 将 Scriptographer  移植到 JavaScript 官网和浏览器。
-
-fabric.js：JavaScript Canvas 库，SVG 与 Canvas 可以相互解析。官网
-
-peity：进度条、线状和饼状图。官网
-
-raphael：JavaScript 矢量库。官网
-
-echarts：商业产品图表。官网
-
-vis：动态的、基于浏览器的可视化库。官网
-
-two.js：一个渲染器无关的适用于 web 的二维绘图 api 。官网
-
-g.raphael：基于 Rapha�l 图表库。官网
-
-sigma.js：一个致力于图形绘画的 JavaScript 库。官网
-
-arbor：一个使用 web workers 和 jQuery 的图形可视化库。官网
-
-cubism：可视化时间序列的 D3 插件。官网
-
-dc.js：与 crossfilter 无缝合作的多维图表绘制库，使用 d3.js 渲染。官网
-
-vega：一套可视化语法。官网
-
-processing.js：Processing.js 基于 Web 标准使数据可视化，而无需任何插件。官网
-
-envisionjs：动态的 HTML5 可视化。官网
-
-rickshaw：用于构建交互式实时图表的 JavaScript 工具包。官网
-
-flot：吸引人的、基于 jQuery 的 JavaScript 图表库。官网
-
-morris.js：漂亮的时间序列线框图。官网
-
-nvd3：一个为 D3.js 构建可复用图表和图表组件的库。官网
-
-svg.js：一个轻量的、用于操作和添加 SVG 动画的库。官网
-
-heatmap.js：基于 HTML5 canvas 的热力图 JavaScript 库。官网
-
-jquery.sparkline：一个直接在浏览器端生成小型走势图的 jQuery 插件。官网
-
-xCharts：一个基于 D3、用于构建自定义图表和图形的库。官网
-
-trianglify：基于 d3.js 的低多边形（low poly）风格背景图片生成器。官网
-
-d3-cloud：创建词云（word cloud）效果的 JavaScript 库。官网
-
-d4：一个基于 D3 、友好、可复用的 DSL 图表库 。官网
-
-dimple.js：基于 d3 的简易商业分析图表库。官网
-
-chartist-js：简单的响应式图表。官网
-
-epoch：一个通用的实时图表库。官网
-
-c3：基于 D3 的可复用图表库。官网
-
-BabylonJS：一个运用 HTML5 和 WebGL 构建 3D 游戏的框架。官网
-
-也有一些很棒的收费库，如 amchart、plotly 和 highchart。
-
-时间轴
-TimelineJS： 一个用 JavaScript 编写的可叙事时间轴库。官网
-
-timesheet.js：用于构建简单的 HTML5 & CSS3 时间表的 JavaScript 库。官网
-
-编辑器
-ace：Ace（Ajax.org Cloud9 Editor）。官网
-
-CodeMirror：浏览器端的代码编辑器。官网
-
-esprima：用于综合分析的 ECMAScript 解析器。官网
-
-quill：一个带有 API 的跨浏览器富文本编辑器。(官网)
-
-medium-editor：Medium.com 所见即所得编辑器的克隆版。官网
-
-pen：享受在线编辑（支持 markdown）。官网
-
-jquery-notebook：一个易用的、简洁优雅的文本编辑器。灵感来源于 Medium 的魅力。官网
-
-bootstrap-wysiwyg：小巧的、兼容 bootstrap 的所见即所得的富文本编辑器。官网
-
-ckeditor-releases：适用于每个人的 web 文本编辑器。官网
-
-editor：一个 markdown 编辑器，但仍在开发中。官网
-
-EpicEditor：一个可嵌入的 JavaScript Markdown 官网的编辑器，拥有全屏编辑、即时预览、自动保存草稿和离线支持等功能。
-
-jsoneditor：查看、编辑和格式化 JSON 的 web 工具。官网
-
-vim.js： 拥有持久化 ~/.vimrc 的 Vim 编辑器的 JavaScript 移植版本。官网
-
-Squire：HTML5 富文本编辑器。官网
-
-TinyMCE：JavaScript 富文本编辑器。官网
-
-trix：由 Basecamp 制作，适用于每天写作的富文本编辑器。官网
-
-
-
-
-
-函数式编程
-函数式编程库扩展了 JavaScript 的能力。
-
-underscore：JavaScript 的实用工具。官网
-
-lodash：提供一致性、可定制、高性能和额外功能的实用库。官网
-
-Sugar：一个扩展了原生对象功能的 JavaScript 库。官网
-
-lazy.js：类似 Underscore，但性能更优越官网
-
-ramda：一个针对 JavaScript 程序员的实用函数库。官网
-
-mout：模块化的 JavaScript 工具库。官网
-
-mesh：流数据同步工具。官网
-
-响应式编程
-响应式程序库扩展了 JavaScript 的能力。
-
-RxJs：对 JavaScript 进行响应式扩展。官网
-
-Bacon：JavaScript 的 FPR（函数式响应式编程）库。官网
-
-Kefir：受 Bacon.js 和 RxJS 启发的 FRP 库，专注于高性能和低内存消耗。官网
-
-Highland：对 JavaScript 实用工具的重新思考，Highland 能轻易地管理同步和异步信息，而且仅使用标准 JavaScript 和类 Node 流。官网
-
-Most.js：高性能 FRP 库。官网
-
-数据结构
-数据结构库用于构建一个更复杂的应用。
-
-immutable-js：不可变的数据集合，包括 Sequence、Range、Repeat、Map、OrderedMap、Set 和 sparse Vector。官网
-
-mori：使用 ClojureScript 持久化数据结构和支持原生 JavaScript API 的库。官网
-
-buckets：完整的、经过充分测试和记录数据结构的 JavaScript 库。官网
-
-hashmap：简单的 hashmap 实现，支持任何类型的键值。官网
-
-日期
-日期库。
-
-moment：解析、验证、操作和显示日期。官网
-
-moment-timezone：基于 moment.js 的时区库。官网
-
-jquery-timeago：一款支持自动更新模糊时间戳的 jQuery 插件（如：“4 分钟之前”）。官网
-
-timezone-js：让 JavaScript Date 对象拥有时区功能。使用 Olson zoneinfo 文件记录着时区数据。官网
-
-date：拥有人性化的 Date() 方法。官网
-
-ms.js：小巧的毫秒转换工具。官网
-
-字符串
-字符串库。
-
-selecting：一个允许你获取用户选定文本的库。官网
-
-underscore.string：扩展了 Underscore.js 的字符串操作。官网
-
-string.js：额外的 JavaScript 字符串方法。官网
-
-he：健壮的 HTML 实体编码/解码器。官网
-
-multiline：多行字符串。官网
-
-query-string：解析和字符串化 URL 查询字符串。官网
-
-URI.js：URL 操作库。官网
-
-jsurl：轻量的 URL 操作库。官网
-
-sprintf.js：实现字符串格式化。官网
-
-url-pattern：让 url 和其它字符串进行比正则表达式匹配更简单。字符串和数据可相互转化。官网
-
-数字
-Numeral-js：对数字进行格式化和操作的库。官网
-
-odometer：流畅的数字过渡效果。官网
-
-accounting.js：对数字、金钱、货币进行格式化的轻量库——完全本地化和无依赖。官网
-
-money.js：一个小巧（1kb）的货币转换库，适用于 web 和 nodeJS。官网
-
-Fraction.js：一个有理数库。官网
-
-Complex.js： 一个复数库。官网
-
-Polynomial.js：一个多项式库。官网
-
-存储
-store.js：为所有浏览器封装了 LocalStorage，而没有使用 cookies 和 flash。隐秘地使用 localStorage、globalStorage 和用户数据。官网
-
-localForage：改善后的离线存储。其封装了 IndexedDB、WebSQL 和 localStorage，拥有操作简单和强大的 API。官网
-
-jStorage：jStorage 是一个简单的键值对数据库，用于在浏览器端存储数据。官网
-
-cross-storage：获得权限后，能跨域名本地存储。官网
-
-basket.js：用 localStorage 加载和缓存脚本的资源加载器。官网
-
-bag.js：可以缓存脚本和加载资源，与 basket.js 相似，但增加了键值对接口和对 localStorage / websql / 官网undexedDB 的支持。
-
-basil.js：智能的 JavaScript 数据持久层库。官网
-
-jquery-cookie：轻量简单的、用于读取、编辑和删除 cookie 的 jQuery 插件。官网
-
-Cookies：客户端 Cookie 操作库。官网
-
-DB.js：基于 Promise 的、封装了 IndexDB 的库。官网
-
-lawnchair.js：简单的客户端 JSON 存储。官网
-
-颜色
-randomColor：JavaScript 颜色生成器。官网
-
-chroma.js：拥有各种各样颜色操作的 JavaScript 库。官网
-
-color：JavaScript 颜色转换和操作库。官网
-
-colors：更智能的默认 web 颜色。官网
-
-PleaseJS：随机创建出赏心悦目的颜色和配色方案。官网
-
-TinyColor：快速、轻巧的颜色操作和转换库。官网
-
-Vibrant.js：从图像提取主要颜色。官网
-
-国际化和本地化（I18n And L10n）
-本地化和国际化 JavaScript 库
-
-i18next：JavaScript 最简单的国际化（i18n）方法。官网
-
-polyglot：小巧的国际化助手库。官网
-
-babelfish：i18n 提供友好易懂的 API ，并且内置多种支持。官网
-
-类
-ClassManager：世界上最快、最方便的类系统之一。官网
-
-klass：用于创建极富表现力的类工具库。官网
-
-augment：世界上最小且最快的一流 JavaScript 继承模式。官网
-
-控制流
-async：适用于 node 和浏览器的异步工具库。官网
-
-q：实现异步的 promise JavaScript 库。官网
-
-step：让逻辑顺序合理化的异步控制流库。官网
-
-contra：利用函数风格实现的异步流控制。官网
-
-Bluebird：专注于革新功能和性能的，功能齐全的 promoise 库。官网
-
-when：快速可靠的、Promises/A 规范的 when() 实现，而且拥有异步其它的优秀特性。官网
-
-ObjectEventTarget：提供增加了事件监听的原型（与 DOMElement 的 EventTarget 在浏览器行为一致）。官网
-
-路由
-director：一个小巧的、与 URL 同构的路由器。官网
-
-page.js：受 Express router 启发的小型客户端路由器（约为1200字节）。官网
-
-pathjs：简单、轻量的 web 路由器。官网
-
-crossroads：JavaScript 路由。官网
-
-davis.js：使用 pushState、RESTful 风格和可降级的 JavaScript 路由器。官网
-
-angular-ui-router：基于AngularJS的可嵌套路由。官网
-
-安全性
-DOMPurify：针对 HTML、MathML 和 SVG 的仅支持DOM、快速、高容错的 XSS 过滤器。官网
-
-js-xss：通过白名单配置，即可过滤不信任的 HTML（防止 XSS 攻击）。官网
-
-日志
-log：带有样式的 Console.log。官网
-
-Conzole：对 JavaScript 原生 console 对象方法和功能进行封装的 debug 面板，使其显示在页面内。官网
-
-console.log-wrapper：将日志清晰地记录到 console，且兼容所有浏览器。官网
-
-loglevel：最轻量的 JavaScript 日志记录工具库，向封装后可用的 console.log 方法增加可靠的日志等级。官网
-
-minilog：轻量的、用流式 API 显示的、可用于客户端和服务器端的日志记录库。官网
-
-正则表达式
-RegEx101：在线的 JavaScript 正则表达式测试器和调试器。同时支持 Python、PHP 和 PCRE。官网
-
-RegExr：用于创建、测试和学习正则表达式的 HTML/JS  工具。官网
-
-RegExpBuilder：使用链式方法创建正则表达式。官网
-
-媒体
-Ion.Sound：可用于任何网页上简单音频。官网
-
-语音命令
-annyang：向网站添加语音命令的语音识别库。官网
-
-voix.js：向网站、app 或游戏添加语音命令的 JavaScript 库。官网
-
-API
-bottleneck：强大的频率限制器，使调节流量变得更容易。官网
-
-oauth-signature-js：适用于 node 和 浏览器的 OAuth 1.0a 签名生成器。官网
-
-amygdala：为 Web 应用提供 RESTful HTTP 客户端解决方案。官网
-
-jquery.rest：一个让 RESTful API 更易使用的 jQuery 插件。官网
-
-
-
-
-
-https://cnodejs.org/topic/56e8c95dcf7763a6045c4ae4
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<h3>JavaScript 资源大全中文版</h3>
+<p>2016-03-16 18:23:38</p>
+<div>
+<h2>包管理器</h2>
+<p>管理着 javascript 库，并提供读取和打包它们的工具。</p>
+<ul>
+	<li>
+		<p>npm：npm 是 javascript 的包管理器。<a target="_blank" href="https://www.npmjs.com/">官网</a></p>
+	</li>
+	<li>
+		<p>Bower：一个 web 应用的包管理器。<a target="_blank" href="https://github.com/bower/bower">官网</a></p>
+	</li>
+	<li>
+		<p>component：能构建更好 web 应用的客户端包管理器。<a target="_blank" href="https://github.com/componentjs/component">官网</a></p>
+	</li>
+	<li>
+		<p _hover-ignore="1">spm：全新的静态包管理器。<a target="_blank" href="https://github.com/spmjs/spm">官网</a></p>
+	</li>
+	<li>
+		<p>jam：一个专注于浏览器端和兼容 RequireJS 的包管理器。<a target="_blank" href="https://github.com/caolan/jam">官网</a></p>
+	</li>
+	<li>
+		<p>jspm：流畅的浏览器包管理器。<a target="_blank" href="https://github.com/jspm/jspm-cli">官网</a></p>
+	</li>
+	<li>
+		<p>Ender：没有库文件的程序库。<a target="_blank" href="https://github.com/ender-js/Ender">官网</a></p>
+	</li>
+	<li>
+		<p>volo：以项目模板、添加依赖项与自动化生成的方式创建前端项目。<a target="_blank" href="https://github.com/volojs/volo">官网</a></p>
+	</li>
+	<li>
+		<p>Duo：一个整合 Component、Browserify 和 Go <a target="_blank" href="https://github.com/duojs/duo">官网</a>的最佳思想，使开发者能快速方便地组织和编写前端代码的下一代包管理器。</p>
+	</li>
+</ul>
+<h2>加载器</h2>
+<p>JavaScript 的模块或加载系统。</p>
+<ul>
+	<li>
+		<p>RequireJS：JavaScript 文件和模块的加载器。<a target="_blank" href="https://github.com/jrburke/requirejs">官网</a></p>
+	</li>
+	<li>
+		<p>browserify：在浏览器端以 node.js 的方式 require()。<a target="_blank" href="https://github.com/substack/node-browserify">官网</a></p>
+	</li>
+	<li>
+		<p>SeaJS：用于 Web 的模块加载器。<a target="_blank" href="https://github.com/seajs/seajs">官网</a></p>
+	</li>
+	<li>
+		<p>HeadJS：HEAD 的唯一脚本。<a target="_blank" href="https://github.com/headjs/headjs">官网</a></p>
+	</li>
+	<li>
+		<p>curl：小巧、快速且易扩展的模块加载器，它能处理 AMD、CommonJS Modules/1.1、CSS、HTML/text 和历史脚本。<a target="_blank" href="https://github.com/cujojs/curl">官网</a></p>
+	</li>
+	<li>
+		<p>lazyload：小巧且无依赖的异步 JavaScript 和 CSS 加载器。<a target="_blank" href="https://github.com/rgrove/lazyload/">官网</a></p>
+	</li>
+	<li>
+		<p>script.js：异步 JavaScript 加载器和依赖管理器。<a target="_blank" href="https://github.com/ded/script.js">官网</a></p>
+	</li>
+	<li>
+		<p>systemjs：AMD、CJS（commonJS） 和符合 ES6 规范的模块加载器。<a target="_blank" href="https://github.com/systemjs/systemjs">官网</a></p>
+	</li>
+	<li>
+		<p>LodJS：基于 AMD 的模块加载器。<a target="_blank" href="https://github.com/yanhaijing/lodjs">官网</a></p>
+	</li>
+	<li>
+		<p>ESL：浏览器端的模块加载器，支持延迟定义和 AMD。<a target="_blank" href="https://github.com/ecomfe/esl">官网</a></p>
+	</li>
+	<li>
+		<p>modulejs：轻量的 JavaScript 模块系统。<a target="_blank" href="https://github.com/lrsjng/modulejs">官网</a></p>
+	</li>
+</ul>
+<h2>打包工具</h2>
+<ul>
+	<li>
+		<p>browserify ：Browserify 让你能在浏览器端使用 require(&lsquo;modules&rsquo;) ，打包所有依赖。<a target="_blank" href="https://github.com/substack/node-browserify">官网</a></p>
+	</li>
+	<li>
+		<p>webpack：为浏览器打包 CommonJs/AMD 模块。<a target="_blank" href="https://github.com/webpack/webpack">官网</a></p>
+	</li>
+</ul>
+<h2>测试框架</h2>
+<h3>框架</h3>
+<ul>
+	<li>
+		<p>mocha：适用于 node.js 和浏览器、简易、灵活、有趣的 JavaScript 测试框架。<a target="_blank" href="https://github.com/mochajs/mocha">官网</a></p>
+	</li>
+	<li>
+		<p>jasmine：简单无 DOM 的 JavaScript 测试框架。<a target="_blank" href="https://github.com/jasmine/jasmine">官网</a></p>
+	</li>
+	<li>
+		<p>qunit：一个易于使用的 JavaScript 单元测试框架。<a target="_blank" href="https://github.com/jquery/qunit">官网</a></p>
+	</li>
+	<li>
+		<p>jest：简单的 JavaScript 单元测试框架。<a target="_blank" href="https://github.com/facebook/jest">官网</a></p>
+	</li>
+	<li>
+		<p>prova：基于 Tape 和 Browserify 的测试运行器，它适用于 Node &amp; 浏览器。<a target="_blank" href="https://github.com/azer/prova">官网</a></p>
+	</li>
+	<li>
+		<p>DalekJS：自动化且跨浏览器的 JavaScript 功能测试框架。<a target="_blank" href="https://github.com/dalekjs/dalek">官网</a></p>
+	</li>
+</ul>
+<h3>断言</h3>
+<ul>
+	<li>
+		<p>chai：适用于 node.js 和浏览器的 BDD / TDD 断言框架，并能搭配其它测试框架使用。<a target="_blank" href="https://github.com/chaijs/chai">官网</a></p>
+	</li>
+	<li>
+		<p>Sinon.JS：对 JavaScript 进行 spies、stubs 和 mock 测试。<a target="_blank" href="https://github.com/sinonjs/sinon">官网</a></p>
+	</li>
+	<li>
+		<p>expect.js：简约的、适用于 Node.js 和浏览器端的 BDD 式断言工具。<a target="_blank" href="https://github.com/Automattic/expect.js">官网</a></p>
+	</li>
+	<li>
+		<p>should.js：适用于 Node.js 的 BDD 式断言工具。<a target="_blank" href="https://github.com/tj/should.js">官网</a></p>
+	</li>
+</ul>
+<h3>覆盖率</h3>
+<ul>
+	<li>
+		<p>istanbul：另一个 JS 代码覆盖率检测工具。<a target="_blank" href="https://github.com/gotwarlost/istanbul">官网</a></p>
+	</li>
+	<li>
+		<p>blanket：一个简单的代码覆盖率检测库。它的设计理念是易于安装和使用，且可用于浏览器端和 node.js。<a target="_blank" href="https://github.com/alex-seville/blanket">官网</a></p>
+	</li>
+	<li>
+		<p>JSCover：JSCover 是一个检测 JavaScript 程序代码覆盖率的工具。<a target="_blank" href="https://github.com/tntim96/JSCover">官网</a></p>
+	</li>
+</ul>
+<h3>运行器</h3>
+<ul>
+	<li>
+		<p>phantomjs：脚本化的 Headless WebKit。<a target="_blank" href="https://github.com/ariya/phantomjs">官网</a></p>
+	</li>
+	<li>
+		<p>slimerjs：一个内核为 Gecko 的类似 PhantomJS 工具。<a target="_blank" href="https://github.com/laurentj/slimerjs">官网</a></p>
+	</li>
+	<li>
+		<p>casperjs：基于 PhantomJS 和 Slimer JS 的导航脚本和测试工具。<a target="_blank" href="https://github.com/n1k0/casperjs">官网</a></p>
+	</li>
+	<li>
+		<p>zombie：基于 node.js 、快速、全栈且无图形界面的浏览器的测试工具。<a target="_blank" href="https://github.com/assaf/zombie">官网</a></p>
+	</li>
+	<li>
+		<p>totoro：一个简单可靠且能跨浏览器运行的测试工具。<a target="_blank" href="https://github.com/totorojs/totoro">官网</a></p>
+	</li>
+	<li>
+		<p>karma：一个优秀的的 JavaScript 测试运行器。<a target="_blank" href="https://github.com/karma-runner/karma">官网</a></p>
+	</li>
+	<li>
+		<p>nightwatch：基于 node.js 和 selenium webdriver 的图形界面自动化测试框架。<a target="_blank" href="https://github.com/nightwatchjs/nightwatch">官网</a></p>
+	</li>
+	<li>
+		<p>intern：下一代 JavaScript 代码测试栈。<a target="_blank" href="https://github.com/theintern/intern">官网</a></p>
+	</li>
+	<li>
+		<p>yolpo：在浏览器逐句执行的 JavaScript 解释器。<a target="_blank" href="http://www.yolpo.com/">官网</a></p>
+	</li>
+</ul>
+<h2>QA 工具</h2>
+<ul>
+	<li>
+		<p>JSHint：JSHint 是一个有助于发现 JavaScript 代码错误和潜在问题的工具。<a target="_blank" href="https://github.com/jshint/jshint/">官网</a></p>
+	</li>
+	<li>
+		<p>jscs：JavaScript 代码风格检测工具。<a target="_blank" href="https://github.com/jscs-dev/node-jscs">官网</a></p>
+	</li>
+	<li>
+		<p>jsfmt：格式化、搜索和改写 JavaScript。<a target="_blank" href="https://github.com/rdio/jsfmt">官网</a></p>
+	</li>
+	<li>
+		<p>jsinspect：检测复制粘贴和结构类似的代码。<a target="_blank" href="https://github.com/danielstjules/jsinspect">官网</a></p>
+	</li>
+	<li>
+		<p>buddy.js：发现 JavaScript 代码里的 <a target="_blank" href="https://zh.wikipedia.org/wiki/%C3%A9%C2%AD%C2%94%C3%A8%C2%A1%C2%93%C3%A6%C2%95%C2%B8%C3%A5%C2%AD%C2%97">魔术数字</a>。<a target="_blank" href="https://github.com/danielstjules/buddy.js">官网</a></p>
+	</li>
+	<li>
+		<p>ESLint：完全插件化的工具，能在 JavaScript 中识别和记录模式。<a target="_blank" href="https://github.com/eslint/eslint">官网</a></p>
+	</li>
+	<li>
+		<p>JSLint ：高标准、严格和固执的代码质量工具，旨在只保持语言的优良部分。<a target="_blank" href="https://github.com/douglascrockford/JSLint">官网</a></p>
+	</li>
+</ul>
+<h2>MVC 框架和库</h2>
+<ul>
+	<li>
+		<p><a target="_blank" href="http://hao.jobbole.com/angularjs/">angular.js</a>：为网络应用增强 HTML。<a target="_blank" href="https://github.com/angular/angular.js">官网</a></p>
+	</li>
+	<li>
+		<p>aurelia：一个适用于移动设备、桌面电脑和 web 的客户端 JavaScript 框架。<a target="_blank" href="http://aurelia.io/">官网</a></p>
+	</li>
+	<li>
+		<p>backbone：给你的 JS 应用加入带有 Models、Views、Collections 和 Events 的 Backbone。<a target="_blank" href="https://github.com/jashkenas/backbone">官网</a></p>
+	</li>
+	<li>
+		<p>batman.js：最适合 Rails 开发者的 JavaScript 框架。<a target="_blank" href="http://batmanjs.org/">官网</a></p>
+	</li>
+	<li>
+		<p>ember.js：一个旨在创建非凡 web 应用的 JavaScript 框架。<a target="_blank" href="https://github.com/emberjs/ember.js">官网</a></p>
+	</li>
+	<li>
+		<p>meteor：一个超简单的、数据库无处不在的、只传输数据的纯 JavaScript web 框架。<a target="_blank" href="https://github.com/meteor/meteor">官网</a></p>
+	</li>
+	<li>
+		<p>ractive：新一代 DOM 操作。<a target="_blank" href="https://github.com/ractivejs/ractive">官网</a></p>
+	</li>
+	<li>
+		<p>vue：一个用于构建可交互界面的、直观快速和可组合的 MVVM 框架。<a target="_blank" href="https://github.com/vuejs/vue">官网</a></p>
+	</li>
+	<li>
+		<p>knockout：Knockout 用 JavaScript 让创建响应式的富 UI 更加容易。<a target="_blank" href="https://github.com/knockout/knockout">官网</a></p>
+	</li>
+	<li>
+		<p>spine：构建 JavaScript 应用的轻量 MVC 库。<a target="_blank" href="https://github.com/spine/spine">官网</a></p>
+	</li>
+	<li>
+		<p>espresso.js：一个极小的、用于制作用户界面的 JavaScript 库。<a target="_blank" href="https://github.com/techlayer/espresso.js">官网</a></p>
+	</li>
+	<li>
+		<p>canjs：让 JS 更好、更快、更简单。<a target="_blank" href="https://github.com/canjs/canjs">官网</a></p>
+	</li>
+	<li>
+		<p>react：用于建构用户界面的库。它是声明式的、高效的和极度灵活的，并使用虚拟 DOM 作为其不同的实现。<a target="_blank" href="https://facebook.github.io/react/">官网</a></p>
+	</li>
+	<li>
+		<p>react-native：一个用 React 构建原生应用的框架。<a target="_blank" href="https://github.com/facebook/react-native">官网</a></p>
+	</li>
+	<li>
+		<p>riot：类 React 库，但很轻量。<a target="_blank" href="https://github.com/riot/riot">官网</a></p>
+	</li>
+	<li>
+		<p>thorax：加强你的 Backbone。<a target="_blank" href="https://github.com/walmartlabs/thorax">官网</a></p>
+	</li>
+	<li>
+		<p>chaplin：使用 Backbone.js 库的 JavaScript 应用架构。<a target="_blank" href="https://github.com/chaplinjs/chaplin">官网</a></p>
+	</li>
+	<li>
+		<p>marionette：一个 Backbone.js 的复合应用程序库，旨在简化大型 JavaScript 应用结构。<a target="_blank" href="https://github.com/marionettejs/backbone.marionette">官网</a></p>
+	</li>
+	<li>
+		<p>ripple：一个小巧的、用于构建响应界面的基础框架。<a target="_blank" href="https://github.com/ripplejs/ripple">官网</a></p>
+	</li>
+	<li>
+		<p>rivets：轻量却拥有强大的数据绑定和模板解决方案<a target="_blank" href="https://github.com/mikeric/rivets">官网</a></p>
+	</li>
+	<li>
+		<p>derby：让编写实时和协同应用更简单的 MVC 框架，能够在 Node.js 和浏览器同时运行。<a target="_blank" href="https://github.com/derbyjs/derby">官网</a></p>
+	</li>
+	<ul>
+		<li>
+			<p>derby-awesome：很棒的 derby 组件集合。<a target="_blank" href="https://github.com/russll/awesome-derby">官网</a></p>
+		</li>
+	</ul>
+	<li>
+		<p><a target="_blank" href="http://hao.jobbole.com/way-js/">way.js</a>：简单、轻量、持久化的双向数据绑定。<a target="_blank" href="https://github.com/gwendall/way.js">官网</a></p>
+	</li>
+	<li>
+		<p>mithril.js：Mithril 是一个客户端 MVC 框架（轻量、强大和快速）<a target="_blank" href="https://github.com/lhorie/mithril.js">官网</a></p>
+	</li>
+	<li>
+		<p>jsblocks：jsblocks 是一个更好的 MV-ish 框架。<a target="_blank" href="https://github.com/astoilkov/jsblocks">官网</a></p>
+	</li>
+	<li>
+		<p>LiquidLava：易懂的、用于构建用户界面的 MVC 框架。<a target="_blank" href="http://www.lava-framework.com/">官网</a></p>
+	</li>
+</ul>
+<h2>基于 Node 的 CMS 框架</h2>
+<ul _hover-ignore="1">
+	<li>
+		<p>KeystoneJS：强大的 CMS 和 web 应用框架。<a target="_blank" href="https://github.com/keystonejs/keystone">官网</a></p>
+	</li>
+	<li>
+		<p>Reaction Commerce：拥有实时的架构和设计的响应式（reactive） CMS。<a target="_blank" href="https://github.com/reactioncommerce/reaction">官网</a></p>
+	</li>
+	<li>
+		<p>Ghost：简单、强大的发布平台。<a target="_blank" href="https://github.com/tryghost/Ghost">官网</a></p>
+	</li>
+	<li>
+		<p>Apostrophe：提供内容编辑和基本服务的 CMS。<a target="_blank" href="https://github.com/punkave/apostrophe">官网</a></p>
+	</li>
+	<li>
+		<p>We.js：适用于实时应用、网站或博客的框架。<a target="_blank" href="https://github.com/wejs/we/">官网</a></p>
+	</li>
+	<li>
+		<p>Hatch.js：拥有社交特性的 CMS 平台。<a target="_blank" href="https://github.com/inventures/hatchjs">官网</a></p>
+	</li>
+	<li>
+		<p>TaracotJS：拥有快速、极简风格特点且基于Node.js 的 CMS。<a target="_blank" href="https://github.com/xtremespb/taracotjs-generator/">官网</a></p>
+	</li>
+	<li>
+		<p>Nodizecms：为 CoffeeScript 爱好者准备的 CMS。<a target="_blank" href="https://github.com/nodize/nodizecms">官网</a></p>
+	</li>
+	<li>
+		<p>Cody：拥有所见即所得的编辑器的 CMS。<a target="_blank" href="https://github.com/jcoppieters/cody">官网</a></p>
+	</li>
+	<li>
+		<p>PencilBlue：CMS 和博客平台。<a target="_blank" href="https://github.com/pencilblue/pencilblue/">官网</a></p>
+	</li>
+</ul>
+<h2>模板引擎</h2>
+<p>模板引擎允许您执行字符串插值。</p>
+<ul>
+	<li>
+		<p>mustache.js：是 JavaScript 中带有 {{mustaches}} 的最简模板。<a target="_blank" href="https://github.com/janl/mustache.js">官网</a></p>
+	</li>
+	<li>
+		<p>handlebars.js：是 Mustache 模板语言的扩展。<a target="_blank" href="https://github.com/wycats/handlebars.js/">官网</a></p>
+	</li>
+	<li>
+		<p>hogan.js：是 Mustache 模板语言的编译器。<a target="_blank" href="https://github.com/twitter/hogan.js">官网</a></p>
+	</li>
+	<li>
+		<p>doT：最快速简洁的 JavaScript 模板引擎，适用于 nodejs 和浏览器。<a target="_blank" href="https://github.com/olado/doT">官网</a></p>
+	</li>
+	<li>
+		<p>dustjs：适用于浏览器和 node.js 的异步模板。<a target="_blank" href="https://github.com/linkedin/dustjs/">官网</a></p>
+	</li>
+	<li>
+		<p>eco：嵌入式的 CoffeeScript 模板。<a target="_blank" href="https://github.com/sstephenson/eco/">官网</a></p>
+	</li>
+	<li>
+		<p>JavaScript-Templates：轻量（小于 1KB）、快速且无依赖的强大 JavaScript 模版引擎。<a target="_blank" href="https://github.com/blueimp/JavaScript-Templates">官网</a></p>
+	</li>
+	<li>
+		<p>t.js：小巧的 JavaScript 模板框架，压缩后约为 400 字节。<a target="_blank" href="https://github.com/jasonmoo/t.js">官网</a></p>
+	</li>
+	<li>
+		<p>Jade：健壮的、优雅且功能丰富的 nodejs 模板引擎。<a target="_blank" href="https://github.com/pugjs/jade">官网</a></p>
+	</li>
+	<li>
+		<p>EJS：高效的 JavaScript 模板。<a target="_blank" href="https://github.com/mde/ejs">官网</a></p>
+	</li>
+	<li>
+		<p>xtemplate：可扩展的模板引擎，适用于 node 和浏览器。<a target="_blank" href="https://github.com/xtemplate/xtemplate">官网</a></p>
+	</li>
+	<li>
+		<p>marko：快速轻量且基于 HTML 的模板引擎，支持异步、流、自定义标签和 CommonJS 模编译后输出。适用于 Node.js <a target="_blank" href="https://github.com/marko-js/marko">官网</a>和浏览器。</p>
+	</li>
+</ul>
+<h2>数据可视化</h2>
+<p>Web 数据可视化工具</p>
+<ul>
+	<li>
+		<p>d3：一个对 HTML 和 SVG 进行可视化的 JavaScript 库。<a target="_blank" href="https://github.com/mbostock/d3">官网</a></p>
+	</li>
+	<li>
+		<p>metrics-graphics：更简洁和拥有更规范的数据图表布局优化算法的库。<a target="_blank" href="https://github.com/mozilla/metrics-graphics">官网</a></p>
+	</li>
+	<li>
+		<p>pykcharts.js：经过精心设计后，去除 d3.js 复杂性的 d3.js 图表库。<a target="_blank" href="https://github.com/pykih/PykCharts.js">官网</a></p>
+	</li>
+	<li>
+		<p>three.js：JavaScript 3D 库。<a target="_blank" href="https://github.com/mrdoob/three.js">官网</a></p>
+	</li>
+	<li>
+		<p>Chart.js：简单的、基于 canvas 标签的 HTML5 图表库。<a target="_blank" href="https://github.com/nnnick/Chart.js">官网</a></p>
+	</li>
+	<li>
+		<p>paper.js：是矢量图形脚本中的瑞士军刀 —— 使用 HTML5 Canvas 将 Scriptographer  移植到 JavaScript <a target="_blank" href="https://github.com/paperjs/paper.js">官网</a>和浏览器。</p>
+	</li>
+	<li>
+		<p>fabric.js：JavaScript Canvas 库，SVG 与 Canvas 可以相互解析。<a target="_blank" href="https://github.com/kangax/fabric.js">官网</a></p>
+	</li>
+	<li>
+		<p>peity：进度条、线状和饼状图。<a target="_blank" href="https://github.com/benpickles/peity">官网</a></p>
+	</li>
+	<li>
+		<p>raphael：JavaScript 矢量库。<a target="_blank" href="https://github.com/DmitryBaranovskiy/raphael">官网</a></p>
+	</li>
+	<li>
+		<p>echarts：商业产品图表。<a target="_blank" href="https://github.com/ecomfe/echarts">官网</a></p>
+	</li>
+	<li>
+		<p>vis：动态的、基于浏览器的可视化库。<a target="_blank" href="https://github.com/almende/vis">官网</a></p>
+	</li>
+	<li>
+		<p>two.js：一个渲染器无关的适用于 web 的二维绘图 api 。<a target="_blank" href="https://github.com/jonobr1/two.js">官网</a></p>
+	</li>
+	<li>
+		<p>g.raphael：基于 Rapha�l 图表库。<a target="_blank" href="https://github.com/DmitryBaranovskiy/g.raphael">官网</a></p>
+	</li>
+	<li>
+		<p>sigma.js：一个致力于图形绘画的 JavaScript 库。<a target="_blank" href="https://github.com/jacomyal/sigma.js">官网</a></p>
+	</li>
+	<li>
+		<p>arbor：一个使用 web workers 和 jQuery 的图形可视化库。<a target="_blank" href="https://github.com/samizdatco/arbor">官网</a></p>
+	</li>
+	<li>
+		<p>cubism：可视化时间序列的 D3 插件。<a target="_blank" href="https://github.com/square/cubism">官网</a></p>
+	</li>
+	<li>
+		<p>dc.js：与 crossfilter 无缝合作的多维图表绘制库，使用 d3.js 渲染。<a target="_blank" href="https://github.com/dc-js/dc.js">官网</a></p>
+	</li>
+	<li>
+		<p>vega：一套可视化语法。<a target="_blank" href="https://github.com/trifacta/vega">官网</a></p>
+	</li>
+	<li>
+		<p>processing.js：Processing.js 基于 Web 标准使数据可视化，而无需任何插件。<a target="_blank" href="http://processingjs.org/">官网</a></p>
+	</li>
+	<li>
+		<p>envisionjs：动态的 HTML5 可视化。<a target="_blank" href="https://github.com/HumbleSoftware/envisionjs">官网</a></p>
+	</li>
+	<li>
+		<p>rickshaw：用于构建交互式实时图表的 JavaScript 工具包。<a target="_blank" href="https://github.com/shutterstock/rickshaw">官网</a></p>
+	</li>
+	<li>
+		<p>flot：吸引人的、基于 jQuery 的 JavaScript 图表库。<a target="_blank" href="https://github.com/flot/flot">官网</a></p>
+	</li>
+	<li>
+		<p>morris.js：漂亮的时间序列线框图。<a target="_blank" href="https://github.com/morrisjs/morris.js">官网</a></p>
+	</li>
+	<li>
+		<p>nvd3：一个为 D3.js 构建可复用图表和图表组件的库。<a target="_blank" href="https://github.com/novus/nvd3">官网</a></p>
+	</li>
+	<li>
+		<p>svg.js：一个轻量的、用于操作和添加 SVG 动画的库。<a target="_blank" href="https://github.com/wout/svg.js">官网</a></p>
+	</li>
+	<li>
+		<p>heatmap.js：基于 HTML5 canvas 的热力图 JavaScript 库。<a target="_blank" href="https://github.com/pa7/heatmap.js">官网</a></p>
+	</li>
+	<li>
+		<p>jquery.sparkline：一个直接在浏览器端生成小型走势图的 jQuery 插件。<a target="_blank" href="https://github.com/gwatts/jquery.sparkline">官网</a></p>
+	</li>
+	<li>
+		<p>xCharts：一个基于 D3、用于构建自定义图表和图形的库。<a target="_blank" href="https://github.com/tenxer/xCharts">官网</a></p>
+	</li>
+	<li>
+		<p>trianglify：基于 d3.js 的低多边形（low poly）风格背景图片生成器。<a target="_blank" href="https://github.com/qrohlf/trianglify">官网</a></p>
+	</li>
+	<li>
+		<p>d3-cloud：创建词云（word cloud）效果的 JavaScript 库。<a target="_blank" href="https://github.com/jasondavies/d3-cloud">官网</a></p>
+	</li>
+	<li>
+		<p>d4：一个基于 D3 、友好、可复用的 DSL 图表库 。<a target="_blank" href="https://github.com/heavysixer/d4">官网</a></p>
+	</li>
+	<li>
+		<p>dimple.js：基于 d3 的简易商业分析图表库。<a target="_blank" href="http://dimplejs.org/">官网</a></p>
+	</li>
+	<li>
+		<p>chartist-js：简单的响应式图表。<a target="_blank" href="https://github.com/gionkunz/chartist-js">官网</a></p>
+	</li>
+	<li>
+		<p>epoch：一个通用的实时图表库。<a target="_blank" href="https://github.com/epochjs/epoch">官网</a></p>
+	</li>
+	<li>
+		<p>c3：基于 D3 的可复用图表库。<a target="_blank" href="https://github.com/masayuki0812/c3">官网</a></p>
+	</li>
+	<li>
+		<p>BabylonJS：一个运用 HTML5 和 WebGL 构建 3D 游戏的框架。<a target="_blank" href="https://github.com/BabylonJS/Babylon.js">官网</a></p>
+	</li>
+</ul>
+<p>也有一些很棒的收费库，如 <a target="_blank" href="https://www.amcharts.com/">amchart</a>、<a target="_blank" href="https://plot.ly/">plotly</a> 和 <a target="_blank" href="http://www.highcharts.com/">highchart</a>。</p>
+<h3>时间轴</h3>
+<ul>
+	<li>
+		<p>TimelineJS： 一个用 JavaScript 编写的可叙事时间轴库。<a target="_blank" href="https://github.com/NUKnightLab/TimelineJS">官网</a></p>
+	</li>
+	<li>
+		<p>timesheet.js：用于构建简单的 HTML5 &amp; CSS3 时间表的 JavaScript 库。<a target="_blank" href="https://github.com/semu/timesheet.js">官网</a></p>
+	</li>
+</ul>
+<h2>编辑器</h2>
+<ul>
+	<li>
+		<p>ace：Ace（<a target="_blank" href="http://ajax.org/">Ajax.org</a> Cloud9 Editor）。<a target="_blank" href="https://github.com/ajaxorg/ace">官网</a></p>
+	</li>
+	<li>
+		<p>CodeMirror：浏览器端的代码编辑器。<a target="_blank" href="https://github.com/codemirror/CodeMirror">官网</a></p>
+	</li>
+	<li>
+		<p>esprima：用于综合分析的 ECMAScript 解析器。<a target="_blank" href="https://github.com/ariya/esprima">官网</a></p>
+	</li>
+	<li>
+		<p><a target="_blank" href="http://hao.jobbole.com/quill/">quill</a>：一个带有 API 的跨浏览器富文本编辑器。(<a target="_blank" href="http://quilljs.com/">官网</a>)</p>
+	</li>
+	<li>
+		<p>medium-editor：<a target="_blank" href="http://medium.com/">Medium.com</a> 所见即所得编辑器的克隆版。<a target="_blank" href="https://github.com/yabwe/medium-editor">官网</a></p>
+	</li>
+	<li>
+		<p>pen：享受在线编辑（支持 markdown）。<a target="_blank" href="https://github.com/sofish/pen">官网</a></p>
+	</li>
+	<li>
+		<p>jquery-notebook：一个易用的、简洁优雅的文本编辑器。灵感来源于 Medium 的魅力。<a target="_blank" href="https://github.com/raphaelcruzeiro/jquery-notebook">官网</a></p>
+	</li>
+	<li>
+		<p>bootstrap-wysiwyg：小巧的、兼容 bootstrap 的所见即所得的富文本编辑器。<a target="_blank" href="https://github.com/mindmup/bootstrap-wysiwyg">官网</a></p>
+	</li>
+	<li>
+		<p>ckeditor-releases：适用于每个人的 web 文本编辑器。<a target="_blank" href="https://github.com/ckeditor/ckeditor-releases">官网</a></p>
+	</li>
+	<li>
+		<p>editor：一个 markdown 编辑器，但仍在开发中。<a target="_blank" href="https://github.com/lepture/editor">官网</a></p>
+	</li>
+	<li>
+		<p>EpicEditor：一个可嵌入的 JavaScript Markdown <a target="_blank" href="https://github.com/OscarGodson/EpicEditor">官网</a>的编辑器，拥有全屏编辑、即时预览、自动保存草稿和离线支持等功能。</p>
+	</li>
+	<li>
+		<p>jsoneditor：查看、编辑和格式化 JSON 的 web 工具。<a target="_blank" href="https://github.com/josdejong/jsoneditor">官网</a></p>
+	</li>
+	<li>
+		<p>vim.js： 拥有持久化 ~/.vimrc 的 Vim 编辑器的 JavaScript 移植版本。<a target="_blank" href="https://github.com/coolwanglu/vim.js">官网</a></p>
+	</li>
+	<li>
+		<p>Squire：HTML5 富文本编辑器。<a target="_blank" href="https://github.com/neilj/Squire">官网</a></p>
+	</li>
+	<li>
+		<p>TinyMCE：JavaScript 富文本编辑器。<a target="_blank" href="https://github.com/tinymce/tinymce">官网</a></p>
+	</li>
+	<li>
+		<p>trix：由 Basecamp 制作，适用于每天写作的富文本编辑器。<a target="_blank" href="https://github.com/basecamp/trix">官网</a></p>
+	</li>
+</ul>
+<p><br>
+</p>
+<p><br>
+</p>
+<h3>函数式编程</h3>
+<p>函数式编程库扩展了 JavaScript 的能力。</p>
+<ul>
+	<li>
+		<p><a target="_blank" href="http://hao.jobbole.com/underscore/">underscore</a>：JavaScript 的实用工具。<a target="_blank" href="https://github.com/jashkenas/underscore">官网</a></p>
+	</li>
+	<li>
+		<p><a target="_blank" href="http://hao.jobbole.com/lodash/">lodash</a>：提供一致性、可定制、高性能和额外功能的实用库。<a target="_blank" href="https://github.com/lodash/lodash">官网</a></p>
+	</li>
+	<li>
+		<p>Sugar：一个扩展了原生对象功能的 JavaScript 库。<a target="_blank" href="https://github.com/andrewplummer/Sugar">官网</a></p>
+	</li>
+	<li>
+		<p>lazy.js：类似 Underscore，但性能更优越<a target="_blank" href="https://github.com/dtao/lazy.js">官网</a></p>
+	</li>
+	<li>
+		<p>ramda：一个针对 JavaScript 程序员的实用函数库。<a target="_blank" href="https://github.com/CrossEye/ramda">官网</a></p>
+	</li>
+	<li>
+		<p>mout：模块化的 JavaScript 工具库。<a target="_blank" href="https://github.com/mout/mout">官网</a></p>
+	</li>
+	<li>
+		<p>mesh：流数据同步工具。<a target="_blank" href="https://github.com/crcn/mesh.js">官网</a></p>
+	</li>
+</ul>
+<h3>响应式编程</h3>
+<p>响应式程序库扩展了 JavaScript 的能力。</p>
+<ul>
+	<li>
+		<p>RxJs：对 JavaScript 进行响应式扩展。<a target="_blank" href="https://github.com/Reactive-Extensions/RxJS">官网</a></p>
+	</li>
+	<li>
+		<p>Bacon：JavaScript 的 FPR（函数式响应式编程）库。<a target="_blank" href="https://github.com/baconjs/bacon.js">官网</a></p>
+	</li>
+	<li>
+		<p>Kefir：受 Bacon.js 和 RxJS 启发的 FRP 库，专注于高性能和低内存消耗。<a target="_blank" href="https://github.com/pozadi/kefir">官网</a></p>
+	</li>
+	<li>
+		<p>Highland：对 JavaScript 实用工具的重新思考，Highland 能轻易地管理同步和异步信息，而且仅使用标准 JavaScript 和类 Node 流。<a target="_blank" href="http://highlandjs.org/">官网</a></p>
+	</li>
+	<li>
+		<p>Most.js：高性能 FRP 库。<a target="_blank" href="https://github.com/cujojs/most">官网</a></p>
+	</li>
+</ul>
+<h3>数据结构</h3>
+<p>数据结构库用于构建一个更复杂的应用。</p>
+<ul>
+	<li>
+		<p>immutable-js：不可变的数据集合，包括 Sequence、Range、Repeat、Map、OrderedMap、Set 和 sparse Vector。<a target="_blank" href="https://github.com/facebook/immutable-js">官网</a></p>
+	</li>
+	<li>
+		<p>mori：使用 ClojureScript 持久化数据结构和支持原生 JavaScript API 的库。<a target="_blank" href="https://github.com/swannodette/mori">官网</a></p>
+	</li>
+	<li>
+		<p>buckets：完整的、经过充分测试和记录数据结构的 JavaScript 库。<a target="_blank" href="https://github.com/mauriciosantos/Buckets-JS">官网</a></p>
+	</li>
+	<li>
+		<p>hashmap：简单的 hashmap 实现，支持任何类型的键值。<a target="_blank" href="https://github.com/flesler/hashmap">官网</a></p>
+	</li>
+</ul>
+<h3>日期</h3>
+<p>日期库。</p>
+<ul>
+	<li>
+		<p>moment：解析、验证、操作和显示日期。<a target="_blank" href="https://github.com/moment/moment">官网</a></p>
+	</li>
+	<li>
+		<p>moment-timezone：基于 moment.js 的时区库。<a target="_blank" href="https://github.com/moment/moment-timezone">官网</a></p>
+	</li>
+	<li>
+		<p>jquery-timeago：一款支持自动更新模糊时间戳的 jQuery 插件（如：&ldquo;4 分钟之前&rdquo;）。<a target="_blank" href="https://github.com/rmm5t/jquery-timeago">官网</a></p>
+	</li>
+	<li>
+		<p>timezone-js：让 JavaScript Date 对象拥有时区功能。使用 Olson zoneinfo 文件记录着时区数据。<a target="_blank" href="https://github.com/mde/timezone-js">官网</a></p>
+	</li>
+	<li>
+		<p>date：拥有人性化的 Date() 方法。<a target="_blank" href="https://github.com/MatthewMueller/date">官网</a></p>
+	</li>
+	<li>
+		<p>ms.js：小巧的毫秒转换工具。<a target="_blank" href="https://github.com/rauchg/ms.js">官网</a></p>
+	</li>
+</ul>
+<h3>字符串</h3>
+<p>字符串库。</p>
+<ul>
+	<li>
+		<p>selecting：一个允许你获取用户选定文本的库。<a target="_blank" href="https://github.com/EvandroLG/selecting">官网</a></p>
+	</li>
+	<li>
+		<p>underscore.string：扩展了 Underscore.js 的字符串操作。<a target="_blank" href="https://github.com/epeli/underscore.string">官网</a></p>
+	</li>
+	<li>
+		<p>string.js：额外的 JavaScript 字符串方法。<a target="_blank" href="https://github.com/jprichardson/string.js">官网</a></p>
+	</li>
+	<li>
+		<p>he：健壮的 HTML 实体编码/解码器。<a target="_blank" href="https://github.com/mathiasbynens/he">官网</a></p>
+	</li>
+	<li>
+		<p>multiline：多行字符串。<a target="_blank" href="https://github.com/sindresorhus/multiline">官网</a></p>
+	</li>
+	<li>
+		<p>query-string：解析和字符串化 URL 查询字符串。<a target="_blank" href="https://github.com/sindresorhus/query-string">官网</a></p>
+	</li>
+	<li>
+		<p>URI.js：URL 操作库。<a target="_blank" href="https://github.com/medialize/URI.js/">官网</a></p>
+	</li>
+	<li>
+		<p>jsurl：轻量的 URL 操作库。<a target="_blank" href="https://github.com/Mikhus/jsurl">官网</a></p>
+	</li>
+	<li>
+		<p>sprintf.js：实现字符串格式化。<a target="_blank" href="https://github.com/alexei/sprintf.js">官网</a></p>
+	</li>
+	<li>
+		<p>url-pattern：让 url 和其它字符串进行比正则表达式匹配更简单。字符串和数据可相互转化。<a target="_blank" href="https://github.com/snd/url-pattern">官网</a></p>
+	</li>
+</ul>
+<h3>数字</h3>
+<ul>
+	<li>
+		<p>Numeral-js：对数字进行格式化和操作的库。<a target="_blank" href="https://github.com/adamwdraper/Numeral-js">官网</a></p>
+	</li>
+	<li>
+		<p>odometer：流畅的数字过渡效果。<a target="_blank" href="https://github.com/HubSpot/odometer">官网</a></p>
+	</li>
+	<li>
+		<p>accounting.js：对数字、金钱、货币进行格式化的轻量库——完全本地化和无依赖。<a target="_blank" href="https://github.com/josscrowcroft/accounting.js">官网</a></p>
+	</li>
+	<li>
+		<p>money.js：一个小巧（1kb）的货币转换库，适用于 web 和 nodeJS。<a target="_blank" href="https://github.com/josscrowcroft/money.js">官网</a></p>
+	</li>
+	<li>
+		<p>Fraction.js：一个有理数库。<a target="_blank" href="https://github.com/infusion/Fraction.js">官网</a></p>
+	</li>
+	<li>
+		<p>Complex.js： 一个复数库。<a target="_blank" href="https://github.com/infusion/Complex.js">官网</a></p>
+	</li>
+	<li>
+		<p>Polynomial.js：一个多项式库。<a target="_blank" href="https://github.com/infusion/Polynomial.js">官网</a></p>
+	</li>
+</ul>
+<h3>存储</h3>
+<ul>
+	<li>
+		<p>store.js：为所有浏览器封装了 LocalStorage，而没有使用 cookies 和 flash。隐秘地使用 localStorage、globalStorage 和用户数据。<a target="_blank" href="https://github.com/marcuswestin/store.js">官网</a></p>
+	</li>
+	<li>
+		<p>localForage：改善后的离线存储。其封装了 IndexedDB、WebSQL 和 localStorage，拥有操作简单和强大的 API。<a target="_blank" href="https://github.com/mozilla/localForage">官网</a></p>
+	</li>
+	<li>
+		<p>jStorage：jStorage 是一个简单的键值对数据库，用于在浏览器端存储数据。<a target="_blank" href="https://github.com/andris9/jStorage">官网</a></p>
+	</li>
+	<li>
+		<p>cross-storage：获得权限后，能跨域名本地存储。<a target="_blank" href="https://github.com/zendesk/cross-storage">官网</a></p>
+	</li>
+	<li>
+		<p>basket.js：用 localStorage 加载和缓存脚本的资源加载器。<a target="_blank" href="https://github.com/addyosmani/basket.js">官网</a></p>
+	</li>
+	<li>
+		<p>bag.js：可以缓存脚本和加载资源，与 basket.js 相似，但增加了键值对接口和对 localStorage / websql / <a target="_blank" href="https://github.com/nodeca/bag.js">官网</a>undexedDB 的支持。</p>
+	</li>
+	<li>
+		<p>basil.js：智能的 JavaScript 数据持久层库。<a target="_blank" href="https://github.com/Wisembly/basil.js">官网</a></p>
+	</li>
+	<li>
+		<p>jquery-cookie：轻量简单的、用于读取、编辑和删除 cookie 的 jQuery 插件。<a target="_blank" href="https://github.com/carhartl/jquery-cookie">官网</a></p>
+	</li>
+	<li>
+		<p>Cookies：客户端 Cookie 操作库。<a target="_blank" href="https://github.com/ScottHamper/Cookies">官网</a></p>
+	</li>
+	<li>
+		<p>DB.js：基于 Promise 的、封装了 IndexDB 的库。<a target="_blank" href="https://github.com/aaronpowell/db.js/">官网</a></p>
+	</li>
+	<li>
+		<p>lawnchair.js：简单的客户端 JSON 存储。<a target="_blank" href="https://github.com/brianleroux/lawnchair/">官网</a></p>
+	</li>
+</ul>
+<h3>颜色</h3>
+<ul>
+	<li>
+		<p>randomColor：JavaScript 颜色生成器。<a target="_blank" href="https://github.com/davidmerfield/randomColor">官网</a></p>
+	</li>
+	<li>
+		<p>chroma.js：拥有各种各样颜色操作的 JavaScript 库。<a target="_blank" href="https://github.com/gka/chroma.js">官网</a></p>
+	</li>
+	<li>
+		<p>color：JavaScript 颜色转换和操作库。<a target="_blank" href="https://github.com/MoOx/color">官网</a></p>
+	</li>
+	<li>
+		<p>colors：更智能的默认 web 颜色。<a target="_blank" href="https://github.com/mrmrs/colors">官网</a></p>
+	</li>
+	<li>
+		<p>PleaseJS：随机创建出赏心悦目的颜色和配色方案。<a target="_blank" href="https://github.com/Fooidge/PleaseJS">官网</a></p>
+	</li>
+	<li>
+		<p>TinyColor：快速、轻巧的颜色操作和转换库。<a target="_blank" href="https://github.com/bgrins/TinyColor">官网</a></p>
+	</li>
+	<li>
+		<p>Vibrant.js：从图像提取主要颜色。<a target="_blank" href="https://github.com/jariz/vibrant.js/">官网</a></p>
+	</li>
+</ul>
+<h3>国际化和本地化（I18n And L10n）</h3>
+<p>本地化和国际化 JavaScript 库</p>
+<ul>
+	<li>
+		<p>i18next：JavaScript 最简单的国际化（i18n）方法。<a target="_blank" href="https://github.com/i18next/i18next">官网</a></p>
+	</li>
+	<li>
+		<p>polyglot：小巧的国际化助手库。<a target="_blank" href="https://github.com/airbnb/polyglot.js">官网</a></p>
+	</li>
+	<li>
+		<p>babelfish：i18n 提供友好易懂的 API ，并且内置多种支持。<a target="_blank" href="https://github.com/nodeca/babelfish/">官网</a></p>
+	</li>
+</ul>
+<h3>类</h3>
+<ul>
+	<li>
+		<p>ClassManager：世界上最快、最方便的类系统之一。<a target="_blank" href="https://github.com/kogarashisan/ClassManager">官网</a></p>
+	</li>
+	<li>
+		<p>klass：用于创建极富表现力的类工具库。<a target="_blank" href="https://github.com/ded/klass">官网</a></p>
+	</li>
+	<li>
+		<p>augment：世界上最小且最快的一流 JavaScript 继承模式。<a target="_blank" href="https://github.com/javascript/augment">官网</a></p>
+	</li>
+</ul>
+<h3>控制流</h3>
+<ul>
+	<li>
+		<p>async：适用于 node 和浏览器的异步工具库。<a target="_blank" href="https://github.com/caolan/async">官网</a></p>
+	</li>
+	<li>
+		<p>q：实现异步的 promise JavaScript 库。<a target="_blank" href="https://github.com/kriskowal/q">官网</a></p>
+	</li>
+	<li>
+		<p>step：让逻辑顺序合理化的异步控制流库。<a target="_blank" href="https://github.com/creationix/step/">官网</a></p>
+	</li>
+	<li>
+		<p>contra：利用函数风格实现的异步流控制。<a target="_blank" href="https://github.com/bevacqua/contra/">官网</a></p>
+	</li>
+	<li>
+		<p>Bluebird：专注于革新功能和性能的，功能齐全的 promoise 库。<a target="_blank" href="https://github.com/petkaantonov/bluebird/">官网</a></p>
+	</li>
+	<li>
+		<p>when：快速可靠的、Promises/A 规范的 when() 实现，而且拥有异步其它的优秀特性。<a target="_blank" href="https://github.com/cujojs/when">官网</a></p>
+	</li>
+	<li>
+		<p>ObjectEventTarget：提供增加了事件监听的原型（与 DOMElement 的 EventTarget 在浏览器行为一致）。<a target="_blank" href="https://github.com/gartz/ObjectEventTarget">官网</a></p>
+	</li>
+</ul>
+<h3>路由</h3>
+<ul>
+	<li>
+		<p>director：一个小巧的、与 URL 同构的路由器。<a target="_blank" href="https://github.com/flatiron/director">官网</a></p>
+	</li>
+	<li>
+		<p>page.js：受 Express router 启发的小型客户端路由器（约为1200字节）。<a target="_blank" href="https://github.com/visionmedia/page.js">官网</a></p>
+	</li>
+	<li>
+		<p>pathjs：简单、轻量的 web 路由器。<a target="_blank" href="https://github.com/mtrpcic/pathjs">官网</a></p>
+	</li>
+	<li>
+		<p>crossroads：JavaScript 路由。<a target="_blank" href="https://github.com/millermedeiros/crossroads.js">官网</a></p>
+	</li>
+	<li>
+		<p>davis.js：使用 pushState、RESTful 风格和可降级的 JavaScript 路由器。<a target="_blank" href="https://github.com/olivernn/davis.js">官网</a></p>
+	</li>
+	<li>
+		<p><a target="_blank" href="http://hao.jobbole.com/angular-ui-router/">angular-ui-router</a>：基于AngularJS的可嵌套路由。<a target="_blank" href="http://angular-ui.github.io/ui-router/">官网</a></p>
+	</li>
+</ul>
+<h3>安全性</h3>
+<ul>
+	<li>
+		<p>DOMPurify：针对 HTML、MathML 和 SVG 的仅支持DOM、快速、高容错的 XSS 过滤器。<a target="_blank" href="https://github.com/cure53/DOMPurify">官网</a></p>
+	</li>
+	<li>
+		<p>js-xss：通过白名单配置，即可过滤不信任的 HTML（防止 XSS 攻击）。<a target="_blank" href="https://github.com/leizongmin/js-xss">官网</a></p>
+	</li>
+</ul>
+<h3>日志</h3>
+<ul>
+	<li>
+		<p>log：带有样式的 Console.log。<a target="_blank" href="https://github.com/adamschwartz/log">官网</a></p>
+	</li>
+	<li>
+		<p>Conzole：对 JavaScript 原生 console 对象方法和功能进行封装的 debug 面板，使其显示在页面内。<a target="_blank" href="https://github.com/Oaxoa/Conzole">官网</a></p>
+	</li>
+	<li>
+		<p>console.log-wrapper：将日志清晰地记录到 console，且兼容所有浏览器。<a target="_blank" href="https://github.com/patik/console.log-wrapper">官网</a></p>
+	</li>
+	<li>
+		<p>loglevel：最轻量的 JavaScript 日志记录工具库，向封装后可用的 console.log 方法增加可靠的日志等级。<a target="_blank" href="https://github.com/pimterry/loglevel">官网</a></p>
+	</li>
+	<li>
+		<p>minilog：轻量的、用流式 API 显示的、可用于客户端和服务器端的日志记录库。<a target="_blank" href="http://mixu.net/minilog/">官网</a></p>
+	</li>
+</ul>
+<h3>正则表达式</h3>
+<ul>
+	<li>
+		<p>RegEx101：在线的 JavaScript 正则表达式测试器和调试器。同时支持 Python、PHP 和 PCRE。<a target="_blank" href="https://regex101.com/#javascript">官网</a></p>
+	</li>
+	<li>
+		<p>RegExr：用于创建、测试和学习正则表达式的 HTML/JS  工具。<a target="_blank" href="http://regexr.com/">官网</a></p>
+	</li>
+	<li>
+		<p>RegExpBuilder：使用链式方法创建正则表达式。<a target="_blank" href="https://github.com/thebinarysearchtree/regexpbuilderjs">官网</a></p>
+	</li>
+</ul>
+<h3>媒体</h3>
+<ul>
+	<li>
+		<p>Ion.Sound：可用于任何网页上简单音频。<a target="_blank" href="https://github.com/IonDen/ion.sound">官网</a></p>
+	</li>
+</ul>
+<h3>语音命令</h3>
+<ul>
+	<li>
+		<p>annyang：向网站添加语音命令的语音识别库。<a target="_blank" href="https://github.com/TalAter/annyang">官网</a></p>
+	</li>
+	<li>
+		<p>voix.js：向网站、app 或游戏添加语音命令的 JavaScript 库。<a target="_blank" href="https://github.com/pazguille/voix">官网</a></p>
+	</li>
+</ul>
+<h3>API</h3>
+<ul>
+	<li>
+		<p>bottleneck：强大的频率限制器，使调节流量变得更容易。<a target="_blank" href="https://github.com/SGrondin/bottleneck">官网</a></p>
+	</li>
+	<li>
+		<p>oauth-signature-js：适用于 node 和 浏览器的 OAuth 1.0a 签名生成器。<a target="_blank" href="https://github.com/bettiolo/oauth-signature-js">官网</a></p>
+	</li>
+	<li>
+		<p>amygdala：为 Web 应用提供 RESTful HTTP 客户端解决方案。<a target="_blank" href="https://github.com/lincolnloop/amygdala">官网</a></p>
+	</li>
+	<li>
+		<p>jquery.rest：一个让 RESTful API 更易使用的 jQuery 插件。<a target="_blank" href="https://github.com/jpillora/jquery.rest">官网</a></p>
+	</li>
+</ul>
+<p><br>
+</p>
+<p><br>
+</p>
+<p><a target="_blank" href="https://cnodejs.org/topic/56e8c95dcf7763a6045c4ae4">https://cnodejs.org/topic/56e8c95dcf7763a6045c4ae4</a><br>
+</p>
+<br>
+</body>
+</html>
