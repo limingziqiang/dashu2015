@@ -1,0 +1,5 @@
+if(window.localStorage){
+    var 剩余空间 = 1024 * 1024 * 5 - unescape(encodeURIComponent(JSON.stringify(localStorage))).length;
+    alert(剩余空间); 
+}
+
