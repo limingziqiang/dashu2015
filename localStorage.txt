@@ -3,3 +3,13 @@ if(window.localStorage){
     alert(剩余空间); 
 }
 
+
+if(window.localStorage){
+    alert('This browser supports localStorage');
+}else{
+    alert('This browser does NOT support localStorage');
+}
+
+
+window.localStorage.setItem("key",value);
+window.localStorage.getItem("hello");
