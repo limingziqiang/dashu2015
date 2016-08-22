@@ -1,0 +1,53 @@
+来源：CSDN | 时间：2015-03-24 10:13:59 | 阅读数：6366
+
+[导读] 关于增强现实的概念，相信大家早已耳熟能详，且之前也有多篇文章专门介绍了比较火的AR应用，这从另一方面也反映出了AR技术开始普及的趋势。所以，在这里，我们介绍5款最受欢迎的用于移动应用中增强现实开发的工具
+关于增强现实的概念，相信大家早已耳熟能详，且之前也有多篇文章专门介绍了比较火的AR应用，这从另一方面也反映出了AR技术开始普及的趋势。所以，在这里，我们介绍5款最受欢迎的用于移动应用中增强现实开发的工具。
+还记得前段时间在网上很火的3D小熊不？托它的福，为相当一部分人科普了增强现实（AR）这一技术。为了响应潮流，这里推荐用于移动应用中增强现实开发的5款工具。
+
+
+
+以下这张图表，大致介绍了这五款工具的相关情况：
+
+
+
+1. ARPA SDKs
+
+图像的检测与跟踪、3D对象实时渲染，以及用户和3D对象的交互（比如选择、旋转、缩放）都是ARPA SDK能为iOS、Android构建AR应用时所能提供的功能。其中的ARPA GPS SDK为ARPA SDK补充了基于地理定位的AR功能：它让你可以定义自己的POI（信息点），在检测时，用户可以对它们进行选择并获取更多关于它们的信息，甚至是对它们执行操作（比如“带我去那”的行为，会显示一个带有已选POI的指示图）。
+
+
+
+而ARPA GLASS SDK和ARPA Unity插件分别为Google Glass和Unity游戏引擎提供的功能与ARPA SDK相似。值得一提的是，开发这些SDK的公司Arpa Solutions在过去的几年中一直在构建自己的AR平台，其中涉及的一些功能（脸部识别和虚拟按钮）也将可能会转移到这些SDK中。
+
+2. ARLab SDKs
+
+使用AR Browser SDK你实时的从场景中添加和移除POI，且还可以与它们互动（触摸或将相机指向它们）或对它们执行操作（如发送短信或分享到Facebook上）。
+
+
+
+Image Matching SDK允许你使用成千上万的图像去创建自己本地的匹配池（加载本地资源和远程URLs），即使在没有连接网络的情况下，也可以通过它来匹配任何图像，当然它也支持二维码和条形码识别。除了这两个SDK，ARLab即将推出Object Tracking、Image Tracking和Virtual Button SDKs，而以上所提到的所有的SDK都可用于Android和iOS平台。
+
+3. DroidAR
+
+DroidAR是一款能为Android应用添加基于位置的AR功能的开源框架。手势检测、支持用户可与之交互的静态和动态的3D对象（使用libGDX游戏框架的模型加载器），且标记检测也是DroidAR所提供功能的一部分。DroidAR项目已托管至Github上，感兴趣的同学可以去看一下。
+
+
+
+4. Metaio SDK
+
+Metaio SDK支持2D图像、3D对象、SLAM和位置跟踪、条形码和二维码扫描、连续性视觉搜索（通过Metaio CVS实现，无论是离线还是在线状态）、以及手势检测。
+
+
+
+Metaio还设计了自己的AR脚本语言，AREL（增强现实体验语言）让你可以使用常见的Web技术（HTML 5、XML、Javascript）去开发自己的AR应用，并将它们部署到任何地方。支持Android、iOS、Windows PC、Google Glass、Epson Moverio BT-200和Vuzix M-100，或是在Unity中使用。
+
+ 
+
+5. Wikitude AR SDK
+
+Wikitude AR SDK支持图像识别和跟踪，3D模型的渲染和动画（只支持Wikitude 3D格式）、视频叠加、定位跟踪和图像、文本、按钮、视频等。
+
+
+
+Wikitude AR SDK可用于Android、iOS、Google Glass、Epson Moverio、Vuzix M-100和Optinvent ORA1。此外，还可以作为PhoneGap的一个插件，Titanium的模块，以及Xamarin的组件。
+
+文章来源：Develop Ereconomics
