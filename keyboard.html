@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+<style type="text/css">
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td { margin:0; padding:0; }
+body{ /*font-size:12px;*/ font-family:"微软雅黑"!important; color:#898989;margin:0 auto;position:relative;}
+img{ border:none; display:block;}
+a{ text-decoration:none;color:#595757;}
+.clearfix:after,.clearfix:before{ content:""; display:table;}
+.clearfix:after{ clear:both;}
+.clearfix{*zoom:1;}
+
+.input_password{position:relative;width:175px;}
+.btn-clear{background:url("http://cdn.attach.qdfuns.com/notes/pics/201612/12/161458xta4zui0k9ofcicf.png") no-repeat;width:15px;height:15px;display:none;background-size:100%;position:absolute;right:2px;top:5px;}
+
+
+.boxbox::after{content:"."; clear:both; display:block; font-size:0; line-height:0; height:0; visibility:hidden; overflow:hidden;}
+.password_enter{
+  width: 100%;
+  background: #000;
+  padding: 10px 0;
+  position: fixed;
+  bottom: -266px;
+  z-index: 201;
+    left: 0;
+  border: 1px solid;
+}
+.password_mask,.showDialogText_mask{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  z-index: 200;
+  display: block;
+}
+.showDialogText_mask{
+  opacity: 0.5;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #000;
+  z-index: 205;
+  display: none;
+}
+.password_white{font-size: 18px; text-align: center; color: white; padding-bottom: 10px;}
+.password_child,.password_child_{
+  /*-webkit-box-flex:1;*/
+  background: #5E5E5E;
+  width: 19%;
+  float: left;
+  margin: 0.5% ;
+  text-align: center;
+  line-height:60px;
+  height: 60px;
+  font-size: 20px;
+  color: white;
+  -webkit-box-shadow: -1px 2px 4px #838282 inset;
+}
+.password_child_{
+  width: 32.3%;
+}
+.input_password_parrent,.input_password_relative{
+  position: relative;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.input_password{
+    width:200px;
+  /*width: 100%;
+  margin: 0 auto;
+  display: block;
+  border: none;*/
+  position: absolute;
+  /*top: 0;*/
+  /*left: 0;*/
+  /*right: 0;*/
+  /*z-index: 201;*/
+}
+.input_password input{width:200px;}
+.password_ABC{display: none;}
+.password_ABC .password_child{
+  width: 9%;
+}
+.password_child_Two{
+  width: 9%;
+}
+.password_child_abcd{display: none;}
+.password_ABC .emery{
+  color: red;
+}
+.Del_Img{
+  background-image: url(http://cdn.attach.qdfuns.com/notes/pics/201612/12/163724obwafg6y6ymvvvtw.png); background-size: 23px; background-position: center center;background-repeat: no-repeat;
+
+}
+.abc_ABC_Img{
+  background-image: url(http://cdn.attach.qdfuns.com/notes/pics/201612/12/161508u9is4c0dj4bkgd0f.png); background-size: 23px; background-position: center center;background-repeat: no-repeat;
+}
+.Enter_Img{
+  background-image: url(http://cdn.attach.qdfuns.com/notes/pics/201612/12/163724r422xgxbabaa4ed6.png); background-size: 26px; background-position: center center;background-repeat: no-repeat;
+}
+
+.box_yanzhengma{
+  height: 50px;
+}
+
+.subGetVer{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #1082FF;
+  color: white;
+  line-height: 50px;
+}
+.line_botton_wrap,.showDialogText{
+  background:#289fee;
+  border-radius: 10px;
+  opacity:0.9;
+  color:white;
+  text-align: center;
+  height: auto;
+  padding: 10px 0;
+  position:fixed;
+  left:10%;
+  right:10%;
+  width: 80%;
+  bottom: 30px;
+  margin:auto;
+  z-index: 20;
+}
+.showDialogText{
+  bottom: auto;
+  top: 30%;
+  background: #FFFFFF;
+  color:#000;
+  padding: 15px 0;
+  opacity: 1;
+  border: 1px solid #cccccc;
+  z-index: 206;
+}
+.bottom_float_text,.bottom_float_text{
+  margin:0 10px;
+}
+</style>
+    <body>
+        <div class="input-wrap box-f1 bordernone input_password_relative">
+            <div class="input_password">
+                <div class="input-out">
+                    <input id="newPassword" readonly="readonly" type="password" maxlength="12" class="input-text" placeholder="请输入">
+                </div>
+                <div class="btn-clear"></div>
+            </div>
+        </div>
+        <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+        <script>
+            function password(inputId){
+                this.inputId = inputId;
+                this.inputText ="";
+                this.btnClear = null;
+                this.inputClick();
+
+            };
+            password.prototype.init = function(){
+                var self = this;
+                var password_enter = '<div class="password_enter boxbox"></div>';
+                var mask = '<div class="password_mask boxbox"></div>';
+                $('body').append(password_enter + mask);
+                var password_white = '<div class="password_white">' + '您正在使用密码安全键盘' + '</div>';
+                var password_number = '<div class="password_number boxbox"></div>';
+                var password_ABC = '<div class="password_ABC"></div>';
+                var password_btn = '<div class="password_btn"></div>';
+                $(password_white + password_number + password_ABC + password_btn).prependTo($('.password_enter'));
+                var password_child_ABC = '<div class="password_child_ password_child_ABC">' + 'abc' + '</div>';
+                var password_child_abcd = '<div class="password_child_ password_child_abcd">' + 'ABC' + '</div>'
+                var password_child_Del = ' <div class="password_child_ password_child_Del">' + 'Del' + '</div>';
+                var password_child_complete = '<div class="password_child_ password_child_complete">' + '完成' + '</div>';
+                $(password_child_ABC + password_child_abcd + password_child_Del + password_child_complete).prependTo($('.password_btn'));
+                self.btnInit();
+            };
+
+            password.prototype.inputClick = function(inputId){
+                var self = this;
+                self.inputText = document.getElementById(this.inputId);
+                self.btnClear = $(self.inputText.parentNode).next()[0];
+                console.log(self.btnClear);
+
+                self.btnClear.addEventListener("click", function(){
+                    self.inputText.value = "";
+                    $(this).hide();   
+                
+                });
+
+                $(self.inputText).click(function(){
+
+                    $(".password_enter").remove();
+                    self.init();
+                    $(self.inputText).val($(self.inputText).val().replace(/\s/g, ''));
+                    $(".password_enter").stop().animate({
+                        "bottom":"0"},"fast")
+                    $(".password_mask").show();
+                })
+
+            };
+
+            password.prototype.EnterHide = function(){
+
+                $(".password_enter").stop().animate({
+                    "bottom":"-266px"
+                },"fast");
+                $(".password_enter").remove();
+                $(".password_mask").hide();
+                $(".password_btn").hide();
+                $(".password_number").show();
+                $(".password_white").hide();
+                $(".password_child_").removeClass("password_child_Two");
+                $("password_child_ABC").text("abc");
+                $(".password_child_abcd").hide();
+                $(".password_child_Del").show();
+                $(".password_child_complete").show();
+                $(".password_child_ABC").show();
+                $(".password_ABC password_child").each(function(){
+                    $(this).text($(this).text().toLowerCase());
+                })
+            };
+
+            password.prototype.btnInit = function(){
+                var self = this;
+                self.dataBoard();
+                $(".password_mask").click(function(){
+                    self.EnterHide();
+                })
+                $(".password_child").click(function(){
+                    var child = $(this).text();
+                    var data_value = $(this).data = child;
+                    var input_val = self.inputText.value.toString();
+                    self.inputText.value = input_val + child;
+
+                    if(self.inputText.value==""&&self.inputText.value==null){
+                        $(self.btnClear).hide();
+                    }else{
+                        $(self.btnClear).show();
+                    }
+
+                });
+
+                $(".password_child_oneTwoThree").click(function(){
+                    $(".password_child_ABC").click();
+                })
+
+                $(".password_child_ABC").click(function(){
+                    var password_child_ABC_text = $(this).text();
+                    switch (password_child_ABC_text){
+                        case "abc" :
+                            $(".password_number").hide();
+                            $(".password_ABC").show();
+                            $('.password_child_abcd').hide();
+                            $(this).text("123");
+                            $(".password_child_").addClass('password_child_Two');
+                            $(".password_child_complete").hide();
+                            $(".password_child_Del").hide();
+                            $(".password_child_ABC").hide();
+                            break;
+
+                        case "123":
+                            $(".password_number").show();
+                            $(".password_ABC").hide();
+                            $('.password_child_abcd').hide();
+                            $(this).text("abc");
+                            $(".password_child_").removeClass('password_child_Two');
+                            $(".password_child_complete").show();
+                            $(".password_child_Del").show();
+                            $(".password_child_ABC").show();
+                            break;
+                    }
+                });
+
+                $(".password_child_abcd_ABC").click(function(){
+                    $(".password_child_abcd").click();
+                })
+
+                $(".password_child_abcd").click(function(){
+                    var abcd = $(this).text();
+                    console.log(abcd);
+                    switch(abcd){
+                        case "abc" :
+                            $(".password_ABC .password_child").each(function(){
+                                $(this).text($(this).text().toLowerCase());
+                            })
+                            $(this).text("ABC");
+                            break;
+
+                        case "ABC" :
+                            $(".password_ABC .password_child").each(function(){
+                                $(this).text($(this).text().toUpperCase());
+                            })
+                            $(this).text("abc");
+                            break;
+                    }
+                })
+
+               $(".password_child_del_ABC").click(function(){
+                    $(".password_child_Del").click();
+               })
+
+                $(".password_child_Del").click(function(){
+                    var input_val = self.inputText.value;
+                    self.inputText.value = input_val.substring(0,input_val.length-1);
+                    if(self.inputText.value.length>0){
+                        $(self.btnClear).show();
+                    }else{
+                        $(self.btnClear).hide();
+                    }
+                })
+
+                $(".password_child_complete").click(function(){
+                    self.EnterHide();
+                });
+
+                $(".password_child_enter").click(function(){
+                    self.EnterHide();
+                });
+            };
+
+            password.prototype.dataBoard = function(){
+                var self = this;
+                var list = "";
+                var Englist = "";
+                var arr = [0,1,2,3,4,5,6,7,8,9];
+                var arr1 =['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', '', '', '123', 'z', 'x', 'c', 'v', 'b', 'n', 'm', ''];
+                arr.sort(function(){
+                    Math.random();
+                })
+                for(var i =0;i<arr.length;i++){
+                    list += "<div class='password_child'>"+arr[i]+"</div>"
+                }
+
+                $(".password_number").html(list);
+
+                for(var k =0;k<arr1.length;k++){
+                    if(k==19){
+                        Englist +=  "<div class='password_child_ Del_Img password_child_del_ABC'>"+arr1[k]+"</div>"
+
+                    }else if(k==20){
+                        Englist +="<div class='password_child_ abc_ABC_Img password_child_abcd_ABC'>"+arr1[k]+"</div>"
+                    }else if(k==21){
+                        Englist +="<div class='password_child_ password_child_oneTwoThree'>"+arr1[k]+"</div>"
+
+                    }else if(k==29){
+                        Englist +="<div class='password_child_ Enter_Img password_child_enter'>"+arr1[k]+"</div>"
+
+                    }else{
+                        Englist +="<div class='password_child'>"+arr1[k]+"</div>"
+                    }
+                    
+                }
+                $(".password_ABC").html(Englist);
+            }
+            var obj = new password("newPassword");
+        </script>
+    </body>
+</html>
