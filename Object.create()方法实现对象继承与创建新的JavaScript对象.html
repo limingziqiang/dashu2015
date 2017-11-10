@@ -1,0 +1,62 @@
+Object.create()方法是 ECMAScript 5中新增的方法，这个方法用于创建一个新对象。被创建的对象会继承另一个对象的原型，在创建新对象时还可以指定一些属性。
+
+
+1. Object.create()语法结构
+Object.create(proto [, propertiesObject])
+proto，{object}，要继承的原型
+propertiesObject，{object}，可选参数，为新创建对象指定的属性对象。该参数对象是一组属性和值，对象的属性名将会是新创建的对象的属性名，属性值是属性描述符。该对象可能会包含以下值：
+configurable，表示新创建的对象是否是可配置的，即：对象的属性是否可以被删除或修改，默认false
+enumerable，对象属性是否可枚举的，即：是否可以for of枚举，默认false
+enumerable，对象的值，可以是任何合法的JavaScript的值，如：number、object、function等，默认undefined
+writable，对象是否可写，是否或以为对象添加新属性，默认false
+get，对象getter函数，默认undefined
+set，对象setter函数，默认undefined
+使用Object.create()方法创建新对象时，如果不是继承一个原有的对象，而是要创建一个全新的对象，就要把proto参数设置为null。如果proto参数不是null或一个对象时，会抛出一个TypeError异常。
+
+
+2. Object.create()的使用
+使用Object.create()方法使用类式继承：
+
+// 基类
+function Site() {
+  this.name = 'Site';
+  this.domain = 'domain';
+}
+
+Site.prototype.create = function(name, domain) {
+  this.name = name;
+  this.domain = domain;
+};
+
+// 子类
+function Itbilu() {
+  Site.call(this); //调用基类的构造函数
+}
+
+// 继承父类
+Itbilu.prototype = Object.create(Site.prototype);
+
+// 创建类实例
+var itbilu = new Itbilu();
+
+itbilu instanceof Site;  // true
+
+
+itbilu.create('IT笔录', 'itbilu.com');
+itbilu.name;    // 'IT笔录'
+itbilu.domain;  // 'itbilu.com'
+
+在不指定propertiesObject设置对象属性时，使用Object.create()方法实现继承与JavaScript原型继承并没有什么区别。因此，上面的示例的后半部分也可以写成下面这样：
+
+// 继承父类
+Itbilu.prototype = Site.prototype;
+
+// 创建类实例
+var itbilu = new Itbilu();
+
+itbilu instanceof Site;  // true
+
+
+itbilu.create('IT笔录', 'itbilu.com');
+itbilu.name;    // 'IT笔录'
+itbilu.domain;  // 'itbilu.com'
