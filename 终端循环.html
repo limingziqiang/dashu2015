@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script>
+		
+		
+		//for
+		
+		//for in
+		
+		//for of
+		
+		//forEach
+		
+		//map some every reduce
+		
+		
+		//switch
+		
+		//while dowhile
+		
+		console.log('-for---------------------------')
+		for(let i = 0; i < 10; i++){
+			if(i == 3){
+				break;
+			}
+			console.log(i)
+		}
+		
+		console.log('-forin---------------------------')
+		
+		
+		let obj = {
+			a:1,
+			b:2,
+			c:3
+		}
+		
+		for(let key in obj){
+			
+			
+			console.log(obj[key])
+			
+			break;
+		}
+		
+		console.log('-forof---------------------------')
+	
+	
+	
+		let arr = ['a','b','c','d']
+		for(let item of arr){
+			console.log(item,arr)
+			break
+		}
+		
+		
+		console.log('-forEach---------------------------')
+	
+		try{
+			let array = ['first','second','third','fourth']
+			
+			array.forEach(function(item, index){
+				if(item == 'third') {
+					throw new Error('EndIterative')
+				}
+				console.log(item);
+			})
+			
+			
+		} catch(e){
+			if(e.message!='EndIterative') throw e;
+		}
+	
+		
+		console.log('-switch---------------------------')
+	
+		let item = 9
+		switch(item){
+			case 1:
+				console.log(1)
+			case 9:
+				console.log(item)
+				break;
+			default:
+				console.log('default')
+		}
+	
+		console.log('-while---------------------------')
+	
+	
+		let arrwhile = ['aa','bb','cc','dd']
+		
+		let iWhileLen = arrwhile.length
+		
+		while(iWhileLen--){
+			
+			if(iWhileLen == 2){
+				//break
+				//continue
+			}
+			console.log(arrwhile[iWhileLen])
+			
+		}
+	
+	
+		console.log('-dowhile---------------------------')
+		
+		var j = 0	
+		do{
+			j++
+			
+			if(j == 2){
+				continue
+			}
+			
+			//break
+			
+			console.log(j)
+			
+		} while(j<5)
+		
+			
+			
+		
+	{
+		console.log('-some---------------------------')	
+		let result = [1,5,13,16].some((v,i)=>{
+			console.log(v,i)
+			return v > 10
+		})
+		
+		console.log(result)
+	}
+	
+	
+		
+	
+	
+	</script>
+</body>
+</html>
