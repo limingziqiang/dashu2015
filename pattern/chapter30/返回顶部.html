@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>返回顶部</title>
+</head>
+
+<body>
+	
+<script>
+	//节流器
+	var throttle = function(){
+		// 获取第一个参数
+		var isClear = arguments[0],fn;
+		
+		// 如果第一个参数是boolean 类型那么第一个参数则表示是否清除计时器
+		if(typeof isClear === 'boolean'){
+			
+			// 第二个参数则为函数
+			fn = arguments[1]
+			
+			// 函数的计时器句柄存在，清除该计时器
+			fn.__throttleID && clearTimeout(fn.__throttleID)
+			
+			
+		} else {
+			// 第一个参数为函数
+			fn = isClear
+			
+			// 第二个参数为函数执行时的参数
+			param = arguments[1]
+			
+			// 对执行时的参数适配默认值，这里我们用到以前学过的extend方法
+			var p = extend({
+				content: null,
+				args:[],
+				time:300
+			}, param)
+			
+			// 清除执行函数计时器句柄
+			fn.__throttleID = setTimeout(function(){
+				fn.apply(p.content, p.args)
+			}, p.time)
+			
+		}
+	}
+	
+	
+	function moveScroll(){
+		var top = $(document).scrollTop();
+		$('#back').animate({
+			top:top + 300
+		}, 400,'easeOutCubic')
+	}
+	
+	
+	$(window).on('scroll',function(){
+		throttle(moveScroll)
+	})
+</script>
+</body>
+</html>
