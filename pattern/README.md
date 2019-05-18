@@ -3,57 +3,57 @@
 
 ### 第一篇 - 面对对象编程
 
-* [第一章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter1) 灵活的语言————javascript
-* [第二章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter2) 面对对象编程
+* [第一章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter1) 灵活的语言————javascript
+* [第二章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter2) 面对对象编程
 
 ### 第二篇 - 创建型设计模式
 
-* [第三章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter3) 简单工厂模式
-* [第四章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter4) 工厂方法模式
-* [第五章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter5) 抽象工厂模式
-* [第六章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter6) 建造者模式
-* [第七章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter7) 原型模式
-* [第八章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter8) 单例模式
+* [第三章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter3) 简单工厂模式
+* [第四章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter4) 工厂方法模式
+* [第五章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter5) 抽象工厂模式
+* [第六章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter6) 建造者模式
+* [第七章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter7) 原型模式
+* [第八章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter8) 单例模式
 
 ### 第三篇 - 结构型设计模式
 
-* [第九章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter9) 外观模式
-* [第十章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter10) 适配器模式
+* [第九章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter9) 外观模式
+* [第十章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter10) 适配器模式
 * 第十一章 代理模式
-* [第十二章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter12) 装饰者模式
-* [第十三章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter13) 桥接模式
-* [第十四章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter14) 组合模式
-* [第十五章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter15) 享元模式
+* [第十二章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter12) 装饰者模式
+* [第十三章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter13) 桥接模式
+* [第十四章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter14) 组合模式
+* [第十五章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter15) 享元模式
 
 ### 第四篇 - 行为型设计模式
 
-* [第十六章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter16) 模板方法模式
-* [第十七章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter17) 观察者模式
-* [第十八章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter18) 状态模式
-* [第十九章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter19) 策略模式
-* [第二十章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter20) 责任链模式
-* [第二十一章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter21) 命令模式
-* [第二十二章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter22) 访问者模式
-* [第二十三章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter23) 中介者模式
-* [第二十四章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter24) 备忘录模式
-* [第二十五章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter25) 迭代器模式
-* [第二十六章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter26) 解释器模式
+* [第十六章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter16) 模板方法模式
+* [第十七章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter17) 观察者模式
+* [第十八章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter18) 状态模式
+* [第十九章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter19) 策略模式
+* [第二十章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter20) 责任链模式
+* [第二十一章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter21) 命令模式
+* [第二十二章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter22) 访问者模式
+* [第二十三章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter23) 中介者模式
+* [第二十四章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter24) 备忘录模式
+* [第二十五章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter25) 迭代器模式
+* [第二十六章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter26) 解释器模式
 
 ### 第五篇 - 技巧型设计模式
 
-* [第二十七章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter27) 链模式
-* [第二十八章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter28) 委托模式
-* [第二十九章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter29) 数据访问对象模式
-* [第三十章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter30) 节流模式
-* [第三十一章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter31) 简单模板模式
-* [第三十二章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter32) 惰性模式
-* [第三十三章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter33) 参与者模式
-* [第三十四章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter34) 等待者模式
-* [第三十五章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter35) 同步模块模式
-* [第三十六章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter36) 异步模块模式
-* [第三十七章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter37) Widget模式（其实是实现一个模板引擎）
-* [第三十八章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter38) MVC模式
-* [第三十九章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter/chapter39) MVP模式
+* [第二十七章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter27) 链模式
+* [第二十八章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter28) 委托模式
+* [第二十九章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter29) 数据访问对象模式
+* [第三十章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter30) 节流模式
+* [第三十一章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter31) 简单模板模式
+* [第三十二章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter32) 惰性模式
+* [第三十三章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter33) 参与者模式
+* [第三十四章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter34) 等待者模式
+* [第三十五章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter35) 同步模块模式
+* [第三十六章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter36) 异步模块模式
+* [第三十七章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter37) Widget模式（其实是实现一个模板引擎）
+* [第三十八章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter38) MVC模式
+* [第三十九章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter39) MVP模式
 * 第四十章 MVVM模式
 
 # The MIT License (MIT)
