@@ -1,0 +1,43 @@
+// 打包统计对象
+
+var LogPack = function(){
+ var data = [],                    // 请求缓存数组
+     MaxNum = 10,                  // 请求缓存最大值
+     itemSplitStr = '|',           // 统计项统计参数间隔符
+     keyValueSplitStr = '*',       // 统计项统计参数键值对间隔符
+     img = new Image();            // 请求触发器，通过图片src属性实现简单的get请求
+ 
+ // 发送请求方法
+ function sendLog(){}
+ 
+ // 统计方法
+ return function(param){
+    // 如果无参数则发送统计
+    if(!param){
+      sendLog();
+      return;
+    }
+    // 添加统计项
+    data.push(param);
+    // 如果统计项大于请求缓存最大值则发送统计请求包
+    data.length >= MaxNum && sendLog();
+ }
+}();
+
+
+// 点击统计
+btn.onclick = function(){
+  LogPack({
+    btnId: this.id,
+    context: this.innerHTML,
+    type: 'click'
+  })
+}
+
+btn.onmouseover = function(){
+  LogPack({
+    btnId: this.id,
+    context: this.innerHTML,
+    type: 'mouseover
+  })
+}
