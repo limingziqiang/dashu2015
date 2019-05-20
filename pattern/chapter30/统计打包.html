@@ -8,7 +8,21 @@ var LogPack = function(){
      img = new Image();            // 请求触发器，通过图片src属性实现简单的get请求
  
  // 发送请求方法
- function sendLog(){}
+ function sendLog(){
+   // 请求参数
+   var logStr = '';
+
+   // 截取MaxNum个统计项发送
+   fireData = data.splice(0, MaxNum);
+   
+   //遍历统计项
+   for(var i = 0, len = fireData.length; i < len; i++){
+       // 天机
+   }
+   //添加
+   
+   
+ }
  
  // 统计方法
  return function(param){
