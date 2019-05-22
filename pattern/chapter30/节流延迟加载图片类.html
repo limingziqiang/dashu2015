@@ -1,0 +1,141 @@
+<script>
+
+	
+	/*
+		节流延迟加载图片类
+		param id 延迟加载图片的容器id
+		注：图片格式如下<img src="img/loading.gif" alt="" data-src="img/1.jpg">
+	*/
+	
+	function LazyLoad(id){
+		// 获取需要节流延迟加载图片的容器
+		this.container = document.getElementById(id);
+		
+		//缓存图片
+		this.imgs = this.getImgs();
+		
+		// 执行逻辑
+		this.init();
+	}
+	
+	
+	
+	
+// 节流延迟加载图片类原型方法
+LazyLoad.prototype = {
+	
+
+		// 起始执行逻辑
+		init: function(){
+			// 加载当前视图图片
+			this.update();
+
+			//绑定事件
+			this.bindEvent();
+		},
+
+
+		// 获取延迟加载图片
+		getImgs : function(){
+			// 新数组容器
+			var arr = [];
+
+			//获取图片
+			var imgs = this.container.getElementsByTagName('img');
+
+			// 将获取的图片转化为数组
+			for(var i = 0, len = imgs.length; i < len; i++){
+				arr.push(imgs[i])
+			}
+			return arr;
+		},
+
+
+		// 加载图片
+		update: function(){
+			// 如果图片都加载完成，返回
+			if(!this.imgs.length){
+				return;
+			}
+			// 获取图片长度
+			var i = this.imgs.length;
+			// 遍历图片
+			for(--i; i >= 0; i--){
+				// 如果图片在可视区域内
+				if(this.shouldShow(i)){
+					//加载图片
+					this.imgs[i].src = this.imgs[i].getAttribute('data-src');
+					this.imgs.splice(i,1);
+				}
+			}
+		},
+		// 获取元素页面中的纵坐标位置
+		pageY: function(element){
+			// 如果元素有父元素
+			if(element.offsetParent){
+				//返回元素+父元素高度
+				return element.offsetTop + this.pageY(element.offsetParent);
+			} else {
+				// 否则返回元素高度
+				return element.offsetTop;
+
+			}
+		},
+
+
+		// 绑定事件 （简化版）
+		on: function(element, type, fn){
+			if(element.addEventListener){
+				element.addEventListener(type,fn,false)
+			} else {
+				element.attachEvent('on'+type, fn ,false)
+			}
+		},
+
+		// 为窗口绑定resize 事件与scroll事件
+		bindEvent: function(){
+			var that = this;
+
+			this.on(window, 'resize', function(){
+				// 节流处理更新图片逻辑
+				throttle(that.update, { context: that })
+			})；
+
+			this.on(window, 'scroll', function(){
+				throttle(that.update, { context: that })
+			})
+
+		},
+
+
+		// 判断图片是否在可视范围内
+		shouldShow: function(i){
+			//获取当前图片
+			var img = this.imgs[i],
+
+			// 可视范围内顶部高度（页面滚动条top值）
+				scrollTop = document.documentElement.scrollTop || document.body.scrollTop,
+
+			// 可视范围内底部高度
+				scrollBottom = scrollTop + document.documentElement.clientHeight,
+
+			// 图片的顶部位置
+			imgTop = this.pageY(img),
+
+			// 图片的底部位置
+			imgBottom = imgTop + img.offsetHeight;
+
+			//?
+			if(imgBottom > scrollTop && imgBottom < scrollBottom || imgTop > scrollTop && imgTop < scrollBottom){
+			   return true
+			}
+
+			return false
+
+		}
+
+	
+}
+	
+
+</script>
