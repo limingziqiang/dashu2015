@@ -19,7 +19,7 @@
 
 * [第九章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter9) 外观模式
 * [第十章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter10) 适配器模式
-* 第十一章 代理模式
+* [第十一章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter11) 代理模式
 * [第十二章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter12) 装饰者模式
 * [第十三章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter13) 桥接模式
 * [第十四章](https://github.com/limingziqiang/dashu2015/tree/master/pattern/chapter14) 组合模式
