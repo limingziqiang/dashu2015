@@ -1,0 +1,334 @@
+本篇主要内容
+
+递归组件
+动态组件
+异步组件
+内联模板 inline-template的使用
+全局组件批量自动注册
+Vue 的构造器——extend
+vue 修饰符sync深入解析
+
+正文开始
+递归组件
+
+函数的递归是自己调用自己，这个过程有两个必要条件：
+
+
+这个函数必须有函数名称
+这个递归函数必须有结束条件,不然就会报Maximum call stack size exceeded,内存溢出
+
+本质上讲，组件也是一个函数，递归组件自然也是自己调用自己，所以也要满足两个条件：
+
+这个组件必须有确定的name,也就是要给组件设置name
+必须要有一个结束条件，告诉组件什么时候递归结束
+
+上代码
+非常简单的功能，让你看懂递归，A.vue中引入B.vue,B组件是递归的核心所在
+<template>
+  // 要将treeData通过prop进行传递
+  <B :propTreeData="treeData"/>
+</template>
+<script>
+import B from './B'
+export default {
+  name: "Tree",
+  data() {
+    return {
+      treeData: [
+        {
+          id: "1",
+          menuName: "笑傲江湖",
+          menuCode: "1",
+          children: [
+            {
+              menuName: "令狐冲",
+              menuCode: "10"
+            },
+            {
+              menuName: "东方不败",
+              menuCode: "11"
+            }
+          ]
+        },
+        {
+          id: "2",
+          menuName: "射雕英雄",
+          menuCode: "2",
+          children: [
+            {
+              menuName: "蓉儿",
+              menuCode: "20"
+            },
+            {
+              menuName: "郭靖",
+              menuCode: "21"
+            }
+          ]
+        }
+      ]
+    };
+  },
+  components:{B}
+};
+</script>
+
+B组件，递归的核心，由于是递归，必须结构一致，因此就必须将A中的treeData通过Props传给B才能实现递归，这就是为啥A和B必须分离，而绝不可能通过一个组件来实现递归，不知道你懂了没？体会一下
+<template>
+  <ul>
+    <li v-for="item in propTreeData" :key="item.menuCode">
+      {{item.menuName}}
+      // 要有一个结束条件
+      <tree v-if="item.children&&item.children.length" :propTreeData="item.children"></tree>
+    </li>
+  </ul>
+</template>
+<script>
+export default {
+  name: "Tree",
+  props:{
+    propTreeData:Array,
+    default:()=>([])
+  },
+};
+</script>
+
+看下实现效果，这是一个最最简单的递归，但是后续的所有的复杂功能，折叠，选中，拖拽哪一个又不是基于这个来进行的呢？复杂功能大家可以继续扩展，都不难
+
+动态组件
+让多个组件使用同一个挂载点，并动态切换，这就是动态组件。
+
+通过使用保留的 <component> 元素，动态地绑定到它的 is 特性，可以实现动态组件
+
+<template>
+  <div id="example">
+    <button @click="change">切换页面</button>
+  <component :is="currentView"></component>
+  </div>
+</template>
+
+<script>
+var LZL = { template: "<div>林志玲</div>" };
+var GYY = { template: "<div>高圆圆</div>" };
+var JJW = { template: "<div>贾静雯</div>" };
+
+export default {
+  name: "App",
+  components: {
+    LZL,
+    GYY,
+    JJW
+  },
+  data() {
+    return {
+       index:0,
+    arr:['LZL','GYY','JJW'],
+    };
+  },
+  computed:{
+    currentView(){
+        return this.arr[this.index];
+    }
+  },
+  methods:{
+    change(){
+      this.index = (++this.index)%3;
+    }
+  }
+};
+</script>
+
+动态组件的缓存，会将不活动的组件实例缓存起来，而不是销毁它们，比如切换tab后，还能保持切换之前的状态，如果有多个条件性的子元素，<keep-alive> 要求同时只有一个子元素被渲染
+
+<keep-alive>
+    <component :is="currentView"></component>  
+</keep-alive>
+-----------------------------------------------
+      
+<keep-alive>` 要求同时只有一个子元素被渲染
+
+<keep-alive>
+    <LZL v-if="index===0"></LZL>
+    <GYY v-else-if="index===1"></GYY>
+    <JJW v-else></JJW>  
+</keep-alive>
+
+使用的时候，比如keep-alive下有A,B,C三个组件，但是我只想缓存A和B,这时候该怎么办，就要用到**【include和exclude】来进行筛选过滤，根据你的过滤 条件确定缓存哪个组件**
+
+include会匹配首先检查组件自身的 name 选项，如果 name 选项不可用，则匹配它的局部注册名称（父组件 components 选项的键值）。匿名组件不能被匹配
+<!-- 逗号分隔字符串 -->
+<keep-alive include="a,b">
+  <component :is="view"></component>
+</keep-alive>
+<!-- 正则表达式 (使用 v-bind) -->
+<keep-alive :include="/a|b/">
+  <component :is="view"></component>
+</keep-alive>
+<!-- Array (use v-bind) -->
+<keep-alive :include="['a', 'b']">
+  <component :is="view"></component>
+</keep-alive>
+
+异步组件
+异步组件说白了就是按需加载，使用时才装入需要的组件，可以有效的提高首次装入页面的速度。比如在路由切换时。
+ {
+            path: '/promisedemo',
+            name: 'PromiseDemo',
+            component: resolve => require(['../components/PromiseDemo'], resolve)
+  }
+利用此特性，我们便能做很多针对前端的优化。
+比如：将页面核心功能（音、视频播放、文章、商品等等）打包成一个核心模块，通过框架优先加载。
+其他的一些周边功能打包后，通过服务器异步加载，从而解决业务需求越来越多导致的系统难维护、访问慢问题。
+
+既然是异步加载，就会存在加载过程（正在加载中）、以及加载失败等异常情况,看下图一目了然。。。
+
+
+内联模板 inline-template的使用
+Vue提供了一种内联模板的功能，在使用组件时，给标签加上inline-complate特性，组件就会把它的内容当作模板，而不是当内容分发。其实也就是说，不在创建一个组件时定义它的模板，而是在声明的外部创建。
+父组件
+<child-component inline-template>
+     <div>
+        <h2>在父组件中定义子组件的模板</h2>
+        <p>{{msg}}</p>
+     </div>
+</child-component>
+
+子组件
+export default{
+    name:'ChildComponent',
+    data(){
+        return{
+            msg:'张不怂'
+        }
+    }
+}
+
+最终显示
+<div data-v-763db97b="">
+    <h2 data-v-763db97b="">在父组件中定义子组件的模板</h2>
+    <p data-v-763db97b="">张不怂</p>
+</div>
+inline-template使得各个组件的结构混乱，建议不要轻易使用内联模板
+全局组件批量自动注册
+我们vue组件中引入组件的一般方式是这样的
+<template>
+    <A  v-model="searchText"  @keydown.enter="search"/>
+    <B @click="search">
+        <C name="search"/>
+    </B>
+</template>
+<script>
+    import B from './B'
+    import C from './C'
+    import A from './A'
+    export default {
+      components: { B, C, A }
+    }
+</script>
+有没有办法可以自动全局进行注册呢？答案是肯定的,在你要引入的包含所有组件的文件夹components的同级目录下建register.js,写入下边的代码
+const requireComponent = require.context(
+  './components',   // 其组件目录的相对路径
+  false,   // 是否查询其子目录
+  /base_[A-Z]\w+\.(vue|js)$/   // 匹配基础组件文件名的正则表达式
+)
+
+requireComponent.keys().forEach(fileName => {
+  // 获取组件配置
+  const componentConfig = requireComponent(fileName)
+
+  // 获取组件的 PascalCase 命名
+  const componentName = upperFirst(
+    camelCase(
+      // 剥去文件名开头的 `./` 和结尾的扩展名
+      fileName.replace(/^\.\/(.*)\.\w+$/, '$1')
+    )
+  )
+
+  // 全局注册组件
+  Vue.component(
+    componentName,
+    componentConfig.default || componentConfig
+  )
+})
+
+然后在你的vue项目的main.js中进行引入,就直接可以使用
+import @/register.js;
+复制代码Vue 的构造器——extend
+Vue.extend(options)
+用法：使用Vue构造器，创建一个“子类”，参数是一个包含组件选项的对象，其中,data选项中必须是函数
+描述：Vue.extend返回的是一个“扩展实例构造器”，也就是预设了部分选项的Vue的实例构造器
+自定义一个无参数标签
+var foo = Vue.extend({
+ template: "<p><a :href='url'>{{foo}}</a></p>",
+ data : function() {
+  return {
+   foo : 'vamous',
+   url : 'https://juejin.im/editor/drafts/5cd2da7a5188253e8c23baf6'
+  }
+ }
+});
+
+对应的html
+<foo></foo>
+
+此时的页面必然是没有任何效果的，因为扩展实例构造器还需要挂载，如下：
+new foo().$mount('#app');
+可以利用propsData传递参数
+var author = Vue.extend({
+ template: "<p><a :href='url'>{{bar}} & {{name}}</a></p>",
+ data : function() {
+  return {
+   bar : 'vamous',
+   url : 'https://juejin.im/editor/drafts/5cd2da7a5188253e8c23baf6'
+  }
+ },
+ props : ['name']
+});
+ 
+new author({propsData: {name : 'foo'}}).$mount('#author');
+
+
+vue 修饰符sync深入解析
+实现子组件与父组件双向绑定的【sync】修饰符：其实sync这个修饰符是vue1.0就有的，它可以实现父子组件的双向绑定，但是Vue2.0被移除了，直到2.3.0版本发布后，又重新开始启用，【.sync】可以很轻松的实现子组件同步修改父组件的值
+如果子组件想修改父组件的值，推荐以update:my-prop-name 的模式触发事件取而代之，也就是这样：
+父组件
+<text-document
+  v-bind:title="doc.title"
+  v-on:update:title="doc.title = $event"
+></text-document>
+---------------------------------------------------------------
+子组件
+this.$emit("update:title".newTitle)
+而上边的 v-on:update:title="doc.title = $event"，本质上就可以用sync这个语法糖来表示，.sync后面紧接的就是父组件中需要被改变的值，看下边的例子体会一下
+父组件
+<template>
+    <div>
+        <child-com :value.sync="text" ></child-com>
+    </div>
+</template>
+<script>
+    export default{
+        data(){
+            return {
+                text:"父组件的值",
+            }
+        },
+    }
+</script>
+==================================================================================
+//子组件中修改父组件的值
+<template>
+    <div @click="post"></div>
+</template>
+
+<script>
+    export default{
+        methods:{
+            post(){
+                this.$emit('update:value',"子组件的值")
+            }
+        }
+    }
+</script>
+本篇基本就是这些，这三篇概述了vue的一些知识点，更多的vue实践还需要在工作中自己总结和挖掘，道阻且长,行则将至~
+
+
