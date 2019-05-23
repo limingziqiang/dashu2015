@@ -1,0 +1,12 @@
+###代理模式 由于一个对象不能直接引用另一个对象，所以需要通过代理对象在这两个对象之间起到中介作用。
+
+<script>
+// 回调函数， 打印出请求数据与响应
+var getJsonpData = 'javascript'
+
+function jsonCallBack(res, req){
+  console.log(res, req);
+}
+</script>
+
+<script type="text/javascript" src="http:localhost/js/jsonp.php?callback=jsonpCallBack&data=getJsonpData"></script>
