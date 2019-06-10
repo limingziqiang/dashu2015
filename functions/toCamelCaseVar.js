@@ -8,6 +8,9 @@
  *
  *   toCamelCaseVar('get_account_list');
  *   // => getAccountList
+ 
+ 
+   如果要匹配替换_a_b_c => ABC  需要更改为 index>=0 ? str.substr(-1).toUpperCase() : str
  *
  */
  
@@ -16,3 +19,5 @@
       return index ? str.substr(-1).toUpperCase() : str;
     });
  }
+
+
