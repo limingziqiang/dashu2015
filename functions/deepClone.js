@@ -20,3 +20,20 @@ function deepClone(obj) {
       ? Array.from(obj)
       : clone;
 }
+
+
+
+/* 个人建议写法，通俗易懂 不装逼格=>
+
+    if(Array.isArray(obj) && obj.length){
+        clone.length = obj.length
+        return Array.from(clone)
+       
+    } else {
+        if(Array.isArray(obj)){
+            return Array.from(obj)
+        } else {
+            return clone
+        }
+    }
+*/
