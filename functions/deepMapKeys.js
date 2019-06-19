@@ -72,3 +72,21 @@ function deepMapKeys(obj, fn) {
         }, {})
         : obj;
 }
+
+
+
+/**
+ * Object.keys(obj) ==> ['foo','nested']
+ * => acc ==>  foo
+ * => current ==> nested
+ * 
+ * 
+ * =>  var val = obj['nested']
+ * 
+ * val != null && typeof val === 'object'   
+ * true => deepMapKey(obj['nested'], fn)
+ * 
+ * false => acc['FOO'] = '1'
+ *       => acc['NESTED'] = ...
+ * 
+ */
