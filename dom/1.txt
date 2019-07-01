@@ -1,0 +1,44 @@
+event.currentTarget   当前 事件沿着DOM触发时事件的当前目标。它总指向事件绑定的元素。
+
+event.target          触发事件的对象 (某个DOM元素) 的引用。当事件处理程序在事件的冒泡或捕获阶段被调用时。
+
+
+
+scrollTop        Element.scrollTop 属性可以获取或设置一个元素的内容垂直滚动的像素数。
+
+一个元素的 scrollTop 值是这个元素的顶部到视口可见内容（的顶部）的距离的度量。当一个元素的内容没有产生垂直方向的滚动条，那么它的 scrollTop 值为0。
+
+
+
+
+touch.pageX      触点相对于HTML文档左边沿的的X坐标. 和 clientX 属性不同, 这个值是相对于整个html文档的坐标, 和用户滚动位置无关. 因此当存在水平滚动的偏移时, 这个值包含了水平滚动的偏移.
+
+touch.clientX    返回触点相对于可视区左边沿的X坐标.不包括任何滚动偏移。这个值会根据用户对可见区域的缩放行为而发生变化.
+
+touch.screenX    返回触点相对于屏幕左边沿的的X坐标. 不包含页面滚动的偏移量.
+
+Element.scrollHeight     Element.scrollHeight 这个只读属性是一个元素内容高度的度量，包括由于溢出导致的视图中不可见内容。
+
+scrollHeight 的值等于该元素在不使用滚动条的情况下为了适应视口中所用内容所需的最小高度。 没有垂直滚动条的情况下，scrollHeight值与元素视图填充所有内容所需要的最小值clientHeight相同。包括元素的padding，但不包括元素的border和margin。scrollHeight也包括 ::before 和 ::after这样的伪元素。
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/API/Element/scrollHeight
+
+
+当容器不滚动但有溢出的子容器时，这些检查可以确定容器能否滚动：
+window.getComputedStyle(element).overflowY === 'visible' 
+window.getComputedStyle(element).overflowY !== 'hidden'
+
+
+如果元素滚动到底，下面等式返回true，没有则返回false.
+element.scrollHeight - element.scrollTop === element.clientHeight
+
+
+
+clientHeight  clientHeight 可以通过 CSS height + CSS padding - 水平滚动条高度 (如果存在)来计算.
+
+
+
+offsetHeight
+
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight
