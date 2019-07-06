@@ -1,1 +1,30 @@
 
+
+口诀心法是： 
+
+function Person(){
+
+}
+var person = new Person()
+
+
+person.__proto__ === Person.prototype  实例的原型就是实例的原型  也就是 实例的原型链指向了构造函数的原型
+
+Person.prototype.constuctor === Person  构造函数的原型构造 就是  构造函数
+
+
+Object.isPrototypeOf(person) === Person.prototype  实例的原型 就是 构造函数的原型
+
+person.__proto__ === person.constuctor.prototype  实例的原型链指向 实例的的构造函数的原型
+
+Person === person.constuctor       构造函数 就是 实例的构造函数
+
+
+Person.prototype.__proto__ === Object.prototype  实例原型的原型链 指向 对象构造函数的原型
+
+Object.prototype.constructor === Object   再次印证，构造函数原型的构造 就是 构造函数
+
+Object.prototype.__proto__ === null
+
+
+所谓JS的继承 不如说是委托
