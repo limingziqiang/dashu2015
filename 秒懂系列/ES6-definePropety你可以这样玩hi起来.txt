@@ -1,1 +1,45 @@
+语法：
+Object.defineProperty(obj, prop, descriptor)
+
+更多详细api 可以查看mdn
+----------------------------------------------------------------
+下面看看一个简单的例子
+
+var obj = {}, value = null;
+Object.defineProperty(obj, "num", {
+    get: function(){
+        console.log('执行了 get 操作')
+        return value;
+    },
+    set: function(newValue) {
+        console.log('执行了 set 操作')
+        value = newValue;
+    }
+})
+
+obj.num = 1 // 执行了 set 操作
+
+console.log(obj.num); // 执行了 get 操作 // 1
+
+
+obj 配置的对象
+"num" 配置对象的key
+
+value 或者 （get，set） 不可并存，单选
+
+get 方法是取值操作
+set 方法是赋值操作
+enumerable 是否可以枚举
+configurable 是否可以配置（进行赋值，是否可以删除）
+----------------------------------------------------------------
+
+实战1：
+
+通过更改数据 自动渲染dom
+
+----------------------------------------------------------------
+
+实战2：
+
+封装方法
 
