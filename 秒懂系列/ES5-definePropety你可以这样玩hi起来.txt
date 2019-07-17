@@ -25,7 +25,7 @@ console.log(obj.num); // 执行了 get 操作 // 1
 obj 配置的对象
 "num" 配置对象的key
 
-value 或者 （get，set） 不可并存，单选
+需要注意的是get和set函数是存取描述符，value和writable函数是数据描述符。描述符必须是这两种形式之一，但二者不能共存，不然会出现异常。
 
 get 方法是取值操作
 set 方法是赋值操作
