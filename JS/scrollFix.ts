@@ -1,3 +1,20 @@
+function getParent(target: HTMLElement, selector:string){
+  const parent = target.parentNode as HTMLElement;
+  
+  // 如果找到html元素，跳出递归
+  if(parent.tagName === 'html'){
+    return false;
+  }
+  // 这块需要注意 .className 真的可以匹配到吗？ 应该是去掉.
+  if(parent.classList.contains(selector)) {
+    return parent;
+  } else {
+    getParent(parent, selector)
+  }
+}
+
+
+
 function _parents(el:any, selector: string){
   var result = [];
   var matchesSelector = el.matches || el.webkitMatchesSelector;
