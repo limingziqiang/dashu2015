@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+
+        #app {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            bottom: 100px;
+            background-color: #eee;
+            overflow: auto;
+        }
+
+        .foot {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            bottom: 0;
+            height: 100px;
+            background-color: #ddd;
+        }
+
+        .content {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            border-bottom: 100px solid red;
+        }
+
+        .dialog {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 70vh;
+            width: 80vw;
+            background-color: royalblue;
+            overflow: auto;
+        }
+
+        .dialog-content {
+            position: relative;
+            width: 100%;
+            height: 800px;
+            background-color: forestgreen;
+            border-bottom: 50px solid yellowgreen;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <div class="container">
+        <div class="content">content1</div>
+        <div class="content">content2</div>
+    </div>
+    <div class="foot">foot</div>
+    <div class="dialog">
+        <div class="dialog-content">
+            <span>dialog-content 1</span>
+            <input type="text">
+        </div>
+        <div class="dialog-content">dialog-content 2</div>
+        <input type="text">
+    </div>
+</div>
+</body>
+</html>
+
