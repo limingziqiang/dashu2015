@@ -1,0 +1,19 @@
+<template>
+  // v-model:modelValue简写为v-model
+  // 可绑定多个v-model
+  <child
+    v-model="state.name"
+    v-model:age="state.age"
+  />
+</template>
+
+<script setup>
+  import { reactive } from 'vue'
+  // 引入子组件
+  import child from './child.vue'
+
+  const state = reactive({
+    name: 'Jerry',
+    age: 20
+  })
+</script>
