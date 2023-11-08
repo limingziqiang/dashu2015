@@ -53,5 +53,22 @@ const importPictureByType = (segments, targetType) => {
 }
 
 
+const processPost = (post, res) => {
+  const segments = res.segments;
+  const postType = PostType[post.type];
+  if(postType) {
+    for(const property in postType) {
+      if(property !== 'type' && property !== 'logMessage') {
+        const target = postType[property];
+        if(target.type !== null){
+          post[target.property] = (target.property === 'content') ? importContentByType(segments, target.type) : importPictureByType(segments, target.type)
+        } else {
+          post[target.property] = res.picture;
+        }
+      }
+    }
+  }
+};
+
 
 
