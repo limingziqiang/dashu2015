@@ -70,5 +70,16 @@ const processPost = (post, res) => {
   }
 };
 
-
-
+// 示例用法
+const post = {
+  type: 'GRAPHIC',
+};
+const res = {
+    segments: [
+      { type: 1, picture: 'picture1.jpg' },
+      { type: 2, text: '富文本内容' },
+    ],
+    picture: 'cover.jpg',
+};
+processPost(post, res);
+console.log(post);
