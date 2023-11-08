@@ -32,3 +32,16 @@ const PostType = {
     },
   },
 };
+
+const importContentByType = (segments, targetType) => {
+  for(const element of segments) {
+    if(element.type === targetType) {
+      return element.text;
+    }
+  }
+  return null;
+}
+
+
+
+
