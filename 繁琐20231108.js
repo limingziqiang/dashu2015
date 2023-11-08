@@ -42,6 +42,16 @@ const importContentByType = (segments, targetType) => {
   return null;
 }
 
+const importPictureByType = (segments, targetType) => {
+  const pictures = new Set();
+  for(const element of segments) {
+    if(element.type === targetType ){
+      pictures.add(element.picture);
+    }
+  }
+  return Array.from(pictures);
+}
+
 
 
 
